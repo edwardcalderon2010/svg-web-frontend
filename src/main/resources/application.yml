@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: svg-web-frontend
+server:
+  port: 8898
