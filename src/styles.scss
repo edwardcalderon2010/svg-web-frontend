@@ -1,1 +1,95 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+  background-color: rgb(227, 236, 242);
+}
+
+.flex_parent {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.flex_panel {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+
+::placeholder {
+  color:lightgrey;
+}
+
+#content_root {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+
+#content_main {
+  width: 70%;
+  max-width: 850px;
+  padding: 10px;
+}
+
+#form_parent {
+  background-color: rgb(255, 247, 238);
+  border : 1px solid grey;
+  border-radius: 15px;
+  padding: 50px;
+}
+
+div.form_panel {
+  display: flex;
+  justify-content:center;
+  flex-direction: column;
+  align-items: flex-start;
+  align-content: center;
+  flex-wrap: wrap;
+  border : 1px solid grey;
+  border-radius: 15px;
+  padding: 10px;
+  margin:20px;
+}
+
+
+div.form_panel > * {
+  margin-top:10px;
+}
+
+#svg_container {
+  position: inherit;
+  z-index: 0;
+  font-family: "proxima-nova", sans-serif;
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#loadingModal {
+  position: inherit;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  color: cornflowerblue;
+}
+
+svg {
+  width: 40vw;
+  height: auto;
+  max-width: 1200px;
+}
+
+.letter_path {
+  fill:  rgb(64, 115, 255);
+}
+
+.strokeMask {
+  stroke: white;
+}
