@@ -43,7 +43,7 @@ public class SvgWebAppController {
                 .decoder(new JacksonDecoder())
                 .target(SvgGeneratorClient.class, SvgGeneratorClient.SVG_GEN_SERVICE_ENDPOINT);
         SvgResponse svgResponse = svgClient.generateSvgFromInputString(input);
-        logger.info("Got JSON response: " + svgResponse.toString());
+        //logger.info("Got JSON response: " + svgResponse.toString());
         return svgResponse;
     }
 

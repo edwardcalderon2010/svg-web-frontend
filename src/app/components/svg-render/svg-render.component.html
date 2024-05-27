@@ -1,8 +1,9 @@
 <div id="form_parent" class="flex_panel">
-    <div id="form_control" class="form_panel">
+    <div id="form_control" class="form_panel" (keydown.enter)="handleClick()">
         <label for="inputText">Enter Text:</label>
         <input type="text" id="inputText" name="inputText" placeholder="Type something.." [formControl]="renderForm">
         <button type="button" (click)="handleClick()">Render</button>
     </div>
-    <div id="targetInsertContainer"></div>
+    <div id="targetInsertContainer">
+    </div>
 </div>
