@@ -22,7 +22,7 @@ export class SvgFetchService {
 
   getSVG(svgText: any): Observable<SvgResponse> {
       var url = this.svgRemoteClient + svgText;
-      console.log('Calling svg-fetch.getSVG with: ' + url);
+      //console.log('Calling svg-fetch.getSVG with: ' + url);
       return this.http.get<SvgResponse>(url);
   }
 
