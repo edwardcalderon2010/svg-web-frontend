@@ -1,9 +1,24 @@
 <div id="form_parent" class="flex_panel">
-    <div id="form_control" class="form_panel" (keydown.enter)="handleClick()">
-        <label for="inputText">Enter Text:</label>
-        <input type="text" id="inputText" name="inputText" placeholder="Type something.." [formControl]="renderForm">
-        <button type="button" (click)="handleClick()">Render</button>
-    </div>
-    <div id="targetInsertContainer">
+    <form [formGroup]="inputForm" id="form_control" class="form_panel" (ngSubmit)="handleClick()">
+        <label for="enterText">Enter Text:</label>
+        <input type="text" id="enterText" name="inputText" placeholder="Type something.." formControlName="inputText">
+        <div *ngIf="inputText?.invalid && (inputText?.dirty || inputText?.touched)" class="alert alert-danger">
+            <div *ngIf="inputText?.hasError('maxlength')">
+                <span class="validation_msg">Input text must be 60 characters or less.</span>
+            </div>
+
+            <div *ngIf="inputText?.hasError('pattern')">
+                <span class="validation_msg">Currently supported characters are as follows;
+                    <ul>
+                        <li>Full uppercase/lowercase alphabet</li>
+                        <li>Additionally; !&,.'</li>
+                    </ul>
+                </span>
+            </div>
+
+        </div>
+        <button type="submit" [disabled]="!inputForm.valid" (click)="handleClick()">Render</button>
+    </form>
+    <div id="targetInsertContainer" class="svg_container">
     </div>
 </div>

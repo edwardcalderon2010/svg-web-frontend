@@ -43,7 +43,7 @@ body {
   padding: 50px;
 }
 
-div.form_panel {
+.form_panel {
   display: flex;
   justify-content:center;
   flex-direction: column;
@@ -57,11 +57,11 @@ div.form_panel {
 }
 
 
-div.form_panel > * {
+.form_panel > * {
   margin-top:10px;
 }
 
-#svg_container {
+.svg_container {
   position: inherit;
   z-index: 0;
   font-family: "proxima-nova", sans-serif;
@@ -70,6 +70,10 @@ div.form_panel > * {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border : 1px solid grey;
+  border-radius: 15px;
+  padding: 50px;
+
 }
 
 #loadingModal {
@@ -92,4 +96,9 @@ svg {
 
 .strokeMask {
   stroke: white;
+}
+
+.validation_msg {
+  color: darksalmon;
+  font-style: italic;
 }
