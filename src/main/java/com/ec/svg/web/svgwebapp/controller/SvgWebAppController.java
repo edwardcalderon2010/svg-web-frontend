@@ -12,17 +12,31 @@ import feign.jaxb.JAXBEncoder;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 
 @Controller
 @RequestMapping(path="svg_web_app")
 public class SvgWebAppController {
 
+    private final String SVG_GEN_SVC_HOST;
+    private final String SVG_GEN_SVC_PORT;
+    private final String SVG_GEN_SVC_CONTEXT;
+
+    private final String SVG_GEN_SVC_ENDPOINT;
     private static final Logger logger = LoggerFactory.getLogger(SvgWebAppController.class);
+
+    public SvgWebAppController(
+            @Value("${svg.gen.svc.host}") String svgGenHost,
+            @Value("${svg.gen.svc.port}") String svgGenPort,
+            @Value("${SVG_GEN_SVC_CONTEXT:/svggen}") String svgGenContext) {
+        SVG_GEN_SVC_HOST = svgGenHost;
+        SVG_GEN_SVC_PORT = svgGenPort;
+        SVG_GEN_SVC_CONTEXT = svgGenContext;
+        SVG_GEN_SVC_ENDPOINT = "http://" + SVG_GEN_SVC_HOST + ":" + SVG_GEN_SVC_PORT + SVG_GEN_SVC_CONTEXT + "/";
+        logger.info("######## Initialising SvgWebAppController with: " + SVG_GEN_SVC_ENDPOINT);
+    }
 
     @GetMapping(path="/hello")
     public @ResponseBody String hello() {
@@ -30,6 +44,7 @@ public class SvgWebAppController {
         return "hello!";
     }
 
+    @CrossOrigin(origins = "http://localhost")
     @GetMapping(path="/remote/svg_gen/{inputString}")
     public @ResponseBody SvgResponse getGeneratedSvg(@PathVariable("inputString")String input) {
 
@@ -41,7 +56,8 @@ public class SvgWebAppController {
         SvgGeneratorClient svgClient = Feign.builder()
                 .encoder(new JacksonEncoder())
                 .decoder(new JacksonDecoder())
-                .target(SvgGeneratorClient.class, SvgGeneratorClient.SVG_GEN_SERVICE_ENDPOINT);
+                .target(SvgGeneratorClient.class, SVG_GEN_SVC_ENDPOINT);
+        //logger.info("### Getting SVG content from " + input);
         SvgResponse svgResponse = svgClient.generateSvgFromInputString(input);
         //logger.info("Got JSON response: " + svgResponse.toString());
         return svgResponse;

@@ -3,3 +3,12 @@ spring:
     name: svg-web-frontend
 server:
   port: 8898
+  servlet:
+    context-path: /svgweb
+
+svg:
+  gen:
+    svc:
+      host: ${SVG_GEN_SVC_HOST:localhost}
+      port: ${SVG_GEN_SVC_PORT:8900}
+      context: ${SVG_GEN_SVC_CONTEXT:/svggen}
