@@ -1,16 +1,15 @@
 import { Injectable } from '@angular/core';
 import {HttpClient, HttpHeaders} from '@angular/common/http';
 import {catchError, Observable, of} from "rxjs";
-import {SvgResponse} from '../model/svg-response'
+import {SvgResponse} from '../model/svg-response';
+import { environment } from "../../environments/environment";
 
 @Injectable({
   providedIn: 'root'
 })
 export class SvgFetchService {
 
-  private svgGeneratorUrl = 'http://localhost:8900/svg_gen/generateAsJSON/';
-  private svgHelloUrl = 'http://localhost:8898/svg_web_app/hello';
-  private svgRemoteClient = 'http://localhost:8898/svgweb/svg_web_app/remote/svg_gen/';
+  private svgRemoteClient;
 
   httpOptions = {
     headers: new HttpHeaders({ 'Content-Type': 'image/svg+xml' })
@@ -18,6 +17,7 @@ export class SvgFetchService {
 
 
   constructor(private http:HttpClient) {
+      this.svgRemoteClient = environment.svgEndpointUrl;
   }
 
   getSVG(svgText: any): Observable<SvgResponse> {
