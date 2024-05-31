@@ -44,7 +44,6 @@ public class SvgWebAppController {
         return "hello!";
     }
 
-    @CrossOrigin(origins = "http://localhost")
     @GetMapping(path="/remote/svg_gen/{inputString}")
     public @ResponseBody SvgResponse getGeneratedSvg(@PathVariable("inputString")String input) {
 

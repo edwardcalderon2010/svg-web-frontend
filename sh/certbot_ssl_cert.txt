@@ -1,0 +1,41 @@
+Saving debug log to /var/log/letsencrypt/letsencrypt.log
+Enter email address (used for urgent renewal and security notices)
+ (Enter 'c' to cancel): edwardcalderon2010@gmail.com
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Please read the Terms of Service at
+https://letsencrypt.org/documents/LE-SA-v1.4-April-3-2024.pdf. You must agree in
+order to register with the ACME server. Do you agree?
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+(Y)es/(N)o: Y
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Would you be willing, once your first certificate is successfully issued, to
+share your email address with the Electronic Frontier Foundation, a founding
+partner of the Let's Encrypt project and the non-profit organization that
+develops Certbot? We'd like to send you email about our work encrypting the web,
+EFF news, campaigns, and ways to support digital freedom.
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+(Y)es/(N)o: Y
+Account registered.
+Requesting a certificate for bluescribbler.com and www.bluescribbler.com
+
+Successfully received certificate.
+Certificate is saved at: /etc/letsencrypt/live/bluescribbler.com/fullchain.pem
+Key is saved at:         /etc/letsencrypt/live/bluescribbler.com/privkey.pem
+This certificate expires on 2024-08-29.
+These files will be updated when the certificate renews.
+
+Deploying certificate
+Successfully deployed certificate for bluescribbler.com to /etc/nginx/sites-enabled/bscribbler
+Successfully deployed certificate for www.bluescribbler.com to /etc/nginx/sites-enabled/bscribbler
+Congratulations! You have successfully enabled HTTPS on https://bluescribbler.com and https://www.bluescribbler.com
+
+NEXT STEPS:
+- The certificate will need to be renewed before it expires. Certbot can automatically renew the certificate in the background, but you may need to take steps to enable that functionality. See https://certbot.org/renewal-setup for instructions.
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+If you like Certbot, please consider supporting our work by:
+ * Donating to ISRG / Let's Encrypt:   https://letsencrypt.org/donate
+ * Donating to EFF:                    https://eff.org/donate-le
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -

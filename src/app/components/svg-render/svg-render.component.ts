@@ -54,7 +54,7 @@ export class SvgRenderComponent implements OnInit {
 
                 this.svgResponse$ = this.svgFetchService.getSVG(svgText);
                 this.svgResponse$.subscribe( json => {
-                    console.log('Got json response as observable: ' + json.payload);
+                    //console.log('Got json response as observable: ' + json.payload);
                     this.svgData = json.payload;
 
                     document.getElementById('targetInsertContainer')!.innerHTML = json.payload;

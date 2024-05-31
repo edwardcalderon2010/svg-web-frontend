@@ -1,0 +1,94 @@
+# Test Config 1.
+# - Works
+# - does not retain proxy hostname
+
+<VirtualHost *:80>
+
+        ServerAdmin webmaster@localhost
+        DocumentRoot /var/www/html
+
+        RewriteEngine on
+        RewriteRule (.*) http://170.64.196.34/svgweb [P,L]
+
+        LogLevel info proxy:trace2
+
+        ErrorLog ${APACHE_LOG_DIR}/error.log
+        CustomLog ${APACHE_LOG_DIR}/access.log combined
+
+</VirtualHost>
+
+# Test Config 2.
+# - Works
+# - does not retain proxy hostname
+
+<VirtualHost *:80>
+
+        ServerAdmin webmaster@localhost
+        DocumentRoot /var/www/html
+
+        RewriteEngine on
+        RewriteRule (.*) http://170.64.196.34/svgweb [P,L]
+
+        LogLevel info proxy:trace2
+
+        ErrorLog ${APACHE_LOG_DIR}/error.log
+        CustomLog ${APACHE_LOG_DIR}/access.log combined
+
+</VirtualHost>
+
+
+# Test Config 3.
+# - Works
+# - does not retain proxy hostname
+
+<VirtualHost *:80>
+
+        ServerAdmin webmaster@localhost
+        DocumentRoot /var/www/html
+
+        ProxyPass "/" "http://170.64.196.34/svgweb"
+        LogLevel info proxy:trace2
+
+        ErrorLog ${APACHE_LOG_DIR}/error.log
+        CustomLog ${APACHE_LOG_DIR}/access.log combined
+
+</VirtualHost>
+
+# Test Config 4.
+# - Broken
+# - infinite loop
+
+<VirtualHost *:80>
+
+        ServerAdmin webmaster@localhost
+        DocumentRoot /var/www/html
+
+        ProxyPass "/" "http://170.64.196.34/svgweb"
+        ProxyPassReverse "/"  "http://170.64.196.34/svgweb"
+        LogLevel info proxy:trace2
+
+        ErrorLog ${APACHE_LOG_DIR}/error.log
+        CustomLog ${APACHE_LOG_DIR}/access.log combined
+
+</VirtualHost>
+
+# Test Config 5.
+# - works
+# retains proxy host
+
+<VirtualHost *:80>
+
+        ServerAdmin webmaster@localhost
+        #DocumentRoot /var/www/html
+
+        ProxyPass "/svgweb" "http://170.64.196.34/svgweb"
+        ProxyPassReverse "/svgweb"  "http://170.64.196.34/svgweb"
+
+        LogLevel info proxy:trace2
+
+        ErrorLog ${APACHE_LOG_DIR}/error.log
+        CustomLog ${APACHE_LOG_DIR}/access.log combined
+
+</VirtualHost>
+
+

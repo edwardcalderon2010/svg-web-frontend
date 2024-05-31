@@ -25,7 +25,7 @@ export class SvgFetchService {
       //console.log('Processing as unencoded: ' + encodedText);
       //console.log('Processing as encoded: ' + svgText);
       //console.log('Calling svg-fetch.getSVG with: ' + url);
-      console.log('Calling svg-fetch.getSVG with CORS header ');
+      //console.log('Calling svg-fetch.getSVG with CORS header ');
       const url = this.svgRemoteClient + encodedText;
       return this.http.get<SvgResponse>(url,{
         headers: {
