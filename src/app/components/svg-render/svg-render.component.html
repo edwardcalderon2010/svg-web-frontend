@@ -1,7 +1,7 @@
 <div id="form_parent" class="flex_panel">
     <form [formGroup]="inputForm" id="form_control" class="form_panel" (ngSubmit)="handleClick()">
         <label for="enterText">Enter Text:</label>
-        <input type="text" id="enterText" name="inputText" placeholder="Type something.." formControlName="inputText">
+        <input type="text" id="enterText" name="inputText" placeholder="Type something.." formControlName="inputText" maxlength="60" max="20">
         <div *ngIf="inputText?.invalid && (inputText?.dirty || inputText?.touched)" class="alert alert-danger">
             <div *ngIf="inputText?.hasError('maxlength')">
                 <span class="validation_msg">Input text must be 60 characters or less.</span>
