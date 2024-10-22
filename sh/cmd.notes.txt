@@ -1,0 +1,2000 @@
+ 1052  cd /
+ 1053  df -k .
+ 1054  cd ~/Downloads/
+ 1055  la
+ 1056  sudo dpkg -i google-chrome-stable_current_amd64.deb 
+ 1057  cd ~/Documents/projects/spring-boot-angular-web-template/
+ 1058  mvn spring-boot:run
+ 1059  curl 'http://localhost:8900/svg_gen/generate/test'
+ 1060  cd ~/Documents/projects/
+ 1061  cd spring-boot-angular-web-template/
+ 1062  la
+ 1063  rm -rf node_modules/
+ 1064  la
+ 1065  less .gitignore 
+ 1066  git init
+ 1067  git status
+ 1068  la node/
+ 1069  vi .gitignore 
+ 1070  git status
+ 1071  tree init/
+ 1072  la init/
+ 1073  git add src/
+ 1074  git status
+ 1075  git add *.json
+ 1076  git status
+ 1077  la
+ 1078  git status
+ 1079  git add pom.xml npm ng
+ 1080  git status
+ 1081  git add init/
+ 1082  git add .gitignore 
+ 1083  git status
+ 1084  git commit -m "EC-001: Initial commit"
+ 1085  ssh-add ~/.ssh/id_ed25519
+ 1086  git log
+ 1087  git remote add origin github@github.com:edwardcalderon2010/spring-boot-angular-web-template.git
+ 1088  git push -u origin master
+ 1089  history | grep origin
+ 1090  git remote
+ 1091  git remote -d origin
+ 1092  git remote remove origin
+ 1093  git remote
+ 1094  git remote add origin git@github.com:edwardcalderon2010/spring-boot-angular-web-template.git
+ 1095  git remote
+ 1096  git push -u origin master
+ 1097  git pull
+ 1098  git pull master master
+ 1099  git pull origin master
+ 1100  git rebase origin master
+ 1101  git rebase origin
+ 1102  git rebase
+ 1103  git rebase master
+ 1104  git fetch
+ 1105  la
+ 1106  git log
+ 1107  git merge
+ 1108  git pull origin master
+ 1109  git pull --rebase origin master
+ 1110  la
+ 1111  git status
+ 1112  git log
+ 1113  git push -u origin master
+ 1114  mvn spring-boot:run
+ 1115  git fetch
+ 1116  git branch
+ 1117  git pull
+ 1118  git branch
+ 1119  git checkout --track origin/dev
+ 1120  git branch
+ 1121  mvn dependencies:tree
+ 1122  mvn dependency:tree
+ 1123  ./ng version
+ 1124  mvn -v
+ 1125  git pull
+ 1126  git status
+ 1127  cd ../svg-web-app/
+ 1128  la
+ 1129  mvn spring-boot:run
+ 1130  la target/classes/
+ 1131  la target/classes/static/
+ 1132  mvn clean compile
+ 1133  mvn spring-boot:run
+ 1134  la
+ 1135  la target/classes/static/
+ 1136  la target/classes/
+ 1137  mvn spring-boot:run
+ 1138  la
+ 1139  cd ../
+ 1140  rm -rf svg-web-app/
+ 1141  la
+ 1142  cd spring-boot-angular-web-template/
+ 1143  git status
+ 1144  vi pom.xml 
+ 1145  grep svg pom.xml 
+ 1146  git diff
+ 1147  vi pom.xml 
+ 1148  git add pom.xml 
+ 1149  git commit -m "EC-001: Editing pom details to be more generic"
+ 1150  git push origin
+ 1151  git push -u origin dev
+ 1152  la
+ 1153  la node
+ 1154  git checkout master
+ 1155  git pull
+ 1156  cd ../
+ 1157  la
+ 1158  mkdir svg-web-frontend
+ 1159  cd svg-web-frontend/
+ 1160  cp ../spring-boot-angular-web-template/init/ .
+ 1161  cp -r ../spring-boot-angular-web-template/init/ .
+ 1162  la
+ 1163  cp ../spring-boot-angular-web-template/npm .
+ 1164  cp ../spring-boot-angular-web-template/ng .
+ 1165  cd init/
+ 1166  la
+ 1167  unzip sample-app.zip -d unzipped
+ 1168  cd unzipped/
+ 1169  la
+ 1170  rm -rf mvnw*
+ 1171  la
+ 1172  rm -rf HELP.md .gitignore .mvn
+ 1173  la
+ 1174  mv src/ ../../
+ 1175  cd ../
+ 1176  rm -rf unzipped/
+ 1177  la
+ 1178  cp pom.xml ../
+ 1179  cd ../
+ 1180  la
+ 1181  cp init/application.yml src/main/resources/
+ 1182  mvn clean compile
+ 1183  ./npm install @angular/cli
+ 1184  nvm v
+ 1185  nvm ls
+ 1186  nvm use v18.13.0
+ 1187  rm -rf node
+ 1188  rm -rf node_modules/
+ 1189  la
+ 1190  mvn clean compile
+ 1191  la
+ 1192  rm -rf node
+ 1193  rm -rf node_modules/
+ 1194  rm -rf package*
+ 1195  la
+ 1196  mvn clean compile
+ 1197  ./npm install @angular/cli
+ 1198  la
+ 1199  rm -rf node
+ 1200  rm -rf node_modules/
+ 1201  rm -rf package*
+ 1202  la
+ 1203  vi pom.xml 
+ 1204  nvm install v18.19.1
+ 1205  nvm use 18.19.1
+ 1206  la
+ 1207  mvn clean compile
+ 1208  ./npm install @angular/cli
+ 1209  ./ng new client --no-standalone
+ 1210  la
+ 1211  cd client/
+ 1212  la
+ 1213  rm -rf node_modules/
+ 1214  la
+ 1215  rm -rf .git .gitignore .vscode/ .editorconfig README.md 
+ 1216  la
+ 1217  tree p
+ 1218  tree public/
+ 1219  rm -rf public/
+ 1220  la
+ 1221  cp -r src/ ../
+ 1222  cp *.json ../
+ 1223  cd ../
+ 1224  rm -rf client/
+ 1225  la
+ 1226  grep "outputPath" angular.json 
+ 1227  sed -i 's,dist/client,target/classes/static,g' angular.json 
+ 1228  grep "outputPath" angular.json 
+ 1229  vi angular.json 
+ 1230  vi pom.xml 
+ 1231  mvn clean compile
+ 1232  la target/classes/static/
+ 1233  vi src/main/resources/application.yml 
+ 1234  rm -rf src/main/resources/application.properties 
+ 1235  la
+ 1236  mvn spring-boot:run
+ 1237  la
+ 1238  git init
+ 1239  git status
+ 1240  la
+ 1241  cp ../spring-boot-angular-web-template/.gitignore .
+ 1242  la
+ 1243  git status
+ 1244  git add src pom.xml *.json
+ 1245  git status
+ 1246  git add ng npm
+ 1247  git add init/
+ 1248  git add .gitignore 
+ 1249  git status
+ 1250  git add pom.xml 
+ 1251  la
+ 1252  git status
+ 1253  git commit -m "EC-000: Initial commit. Default Angular placeholder page."
+ 1254  mvn spring-boot:run
+ 1255  la target/classes/
+ 1256  la target/classes/static/
+ 1257  mvn spring-boot:run
+ 1258  cd ~/Documents/projects/svg-generator/
+ 1259  mvn spring-boot:run
+ 1260  curl localhost:8900/svg_gen/generateAsJSON/hello
+ 1261  cd ~/Documents/projects/svg-web-frontend/
+ 1262  ./ng build --watch
+ 1263  ./ng generate interface model/svgResponse
+ 1264  ./ng build --watch
+ 1265  cd ~/Documents/projects/svg-web-frontend/
+ 1266  mvn spring-boot:run
+ 1267  cd ~/Documents/projects/svg-generator/
+ 1268  mvn spring-boot:run
+ 1269  git status
+ 1270  git add src/main/java/
+ 1271  git status
+ 1272  git diff pom.xml
+ 1273  git status
+ 1274  git add pom.xml 
+ 1275  git diff src/main/resources/application.properties
+ 1276  git add src/main/resources/application.properties 
+ 1277  git status
+ 1278  git log
+ 1279  git status
+ 1280  git commit -m 'EC-003: Minor updates to support web front end access. Tidying up font spacing.'
+ 1281  git push origin master
+ 1282  cd ~/Documents/projects/svg-web-frontend/
+ 1283  mvn spring-boot:run
+ 1284  cd ~/Documents/projects/svg-web-frontend/
+ 1285  ./ng build --watch
+ 1286  cd ~/Documents/projects/svg-generator/
+ 1287  mvn spring-boot:run
+ 1288  cd ~/Documents/projects/svg-web-frontend/
+ 1289  mvn spring-boot:run
+ 1290  mvn clean compile
+ 1291  mvn spring-boot:run
+ 1292  git status
+ 1293  git add angular.json src/app/ src/main/java/
+ 1294  git status
+ 1295  git log
+ 1296  git commit -m 'EC-001: First major milestone: angular form/ui can load and animate SVG font content'
+ 1297  ssh-add ~/.ssh/id_ed25519
+ 1298  git push origin master
+ 1299  ./ng build --watch
+ 1300  cd ~/Documents/projects/svg-generator/
+ 1301  mvn spring-boot:run
+ 1302  git status
+ 1303  la
+ 1304  mkdir sh
+ 1305  cd sh/
+ 1306  docker run --name=mysql23 --restart on-failure -d container-registry.oracle.com/mysql/community-server:8.0
+ 1307  docker ps
+ 1308  docker logs mysql23
+ 1309  docker exec -it mysql23 /bin/bash
+ 1310  docker stop mysql23
+ 1311  docker rm mysql23
+ 1312  docker run --name=mysql23 --restart on-failure -p 4406:3306 -d container-registry.oracle.com/mysql/community-server:8.0
+ 1313  docker ps
+ 1314  docker logs mysql23
+ 1315  docker exec -it mysql23 /bin/bash
+ 1316  docker ps
+ 1317  docker images
+ 1318  docker exec -it mysql23 /bin/bash
+ 1319  docker ps
+ 1320  history | grep docker
+ 1321  docker run --name=mysql46 --restart on-failure --network=svg-net -p 4406:3306 -d container-registry.oracle.com/mysql/community-server:8.0
+ 1322  docker run --name=mysql46 --restart on-failure --network=svg-net -p 5506:3306 -d container-registry.oracle.com/mysql/community-server:8.0
+ 1323  docker stop mysql46
+ 1324  docker rm mysql46
+ 1325  docker run --name=mysql46 --restart on-failure --network=svg-net -p 5506:3306 -d container-registry.oracle.com/mysql/community-server:8.0
+ 1326  docker network ls
+ 1327  docker ls
+ 1328  docker ps
+ 1329  docker exec -it mysql23 /bin/bash
+ 1330  docker exec -it mysql46 /bin/bash
+ 1331  docker stop mysql46
+ 1332  docker rm mysql46
+ 1333  cd ../
+ 1334  la
+ 1335  docker ps
+ 1336  docker stop svg-gen-svc
+ 1337  docker rm svg-gen-svc
+ 1338  docker run --name=mysql46 --restart on-failure --network=svg-net -p 5506:3306 -d container-registry.oracle.com/mysql/community-server:8.0
+ 1339  docker exec -it mysql46 /bin/bash
+ 1340  ipconfig
+ 1341  ifconfig
+ 1342  docker stop mysql23
+ 1343  docker rm mysql23
+ 1344  docker ps
+ 1345  docker stop mysql46
+ 1346  docker rm mysql46
+ 1347  docker network
+ 1348  docker network ls
+ 1349  docker network rm svg-net
+ 1350  docker network create --subnet 192.188.1.0/24 svg-net2
+ 1351  docker run --name=mysql23 --restart on-failure --network=svg-net2 -p 4406:3306 -d container-registry.oracle.com/mysql/community-server:8.0
+ 1352  docker stop mysql23
+ 1353  docker rm mysql23
+ 1354  docker run --name=mysql23 --restart on-failure --network=svg-net2 --ip=192.188.1.1 -p 4406:3306 -d container-registry.oracle.com/mysql/community-server:8.0
+ 1355  docker ps
+ 1356  docker stop mysql23
+ 1357  docker rm mysql23
+ 1358  docker run --name=mysql23 --restart on-failure --network=svg-net2 --ip=192.188.1.1 -p 4406:3306 -d container-registry.oracle.com/mysql/community-server:8.0
+ 1359  docker stop mysql23
+ 1360  docker rm mysql23
+ 1361  docker containers
+ 1362  docker container
+ 1363  docker ls
+ 1364  docker containers ls
+ 1365  docker container ls
+ 1366  docker prune
+ 1367  docker container prune
+ 1368  docker run --name=mysql23 --restart on-failure --network=svg-net2 --ip=192.188.1.1 -p 4406:3306 -d container-registry.oracle.com/mysql/community-server:8.0
+ 1369  docker ps
+ 1370  docker container inspect mysql23
+ 1371  docker container prune
+ 1372  docker network
+ 1373  docker network ls
+ 1374  docker images
+ 1375  docker stop svg-gen-svc
+ 1376  docker ps -a
+ 1377  docker ps --help
+ 1378  netstat -aNp
+ 1379  netstat -aNp | grep LIST
+ 1380  netstat -aNp | grep 3306
+ 1381  netstat -aNp | grep 4406
+ 1382  sudo netstat -aNp | grep 4406
+ 1383  sudo netstat -aNp | grep 3306
+ 1384  sudo netstat -aNp | grep mysql
+ 1385  history | grep subnet
+ 1386  docker run --name=mysql23 --restart on-failure --network=svg-net2 --ip=192.188.1.1  -d container-registry.oracle.com/mysql/community-server:8.0
+ 1387  docker ps -a
+ 1388  docker stop mysql23
+ 1389  docker rm mysql23
+ 1390  docker run --name=mysql23 --restart on-failure --network=svg-net2 --ip=192.188.1.1  -d container-registry.oracle.com/mysql/community-server:8.0
+ 1391  docker exec -it mysql23 /bin/bash
+ 1392  docker network rm svg-net2
+ 1393  docker network ls
+ 1394  docker network inspect wikinet
+ 1395  docker network inspect host
+ 1396  docker network inspect bridge
+ 1397  docker network rm svg-net2
+ 1398  docker network create --subnet 192.188.1.0/24 svg-net3
+ 1399  docker run --name=mysql23 --restart on-failure --network=svg-net3  -d container-registry.oracle.com/mysql/community-server:8.0
+ 1400  docker stop mysql23
+ 1401  docker rm mysql23
+ 1402  docker run --name=mysql23 --restart on-failure --network=svg-net3  -d container-registry.oracle.com/mysql/community-server:8.0
+ 1403  docker inspect mysql23
+ 1404  docker exec -it mysql23 /bin/bash
+ 1405  docker logs mysql23 
+ 1406  docker exec -it mysql23 /bin/bash
+ 1407  docker stop mysql23
+ 1408  docker rm mysql23
+ 1409  docker run --name=mysql23 --restart on-failure --network=svg-net3 --ip=192.188.1.2 -p 4406 -d container-registry.oracle.com/mysql/community-server:8.0
+ 1410  docker exec -it mysql23 /bin/bash
+ 1411  docker logs mysql23
+ 1412  exit
+ 1413  mysql -u root
+ 1414  exit
+ 1415  docker -version
+ 1416  docker --version
+ 1417  docker images
+ 1418  docker pull container-registry.oracle.com/mysql/community-server:8.0
+ 1419  docker images
+ 1420  which netstat
+ 1421  netstat -aNp
+ 1422  netstat -anP
+ 1423  netstat -aNp
+ 1424  netstat -aNp | grep LIST
+ 1425  cd ~/Documents/projects/svg-web-frontend/
+ 1426  mvn spring-boot:run
+ 1427  git status
+ 1428  git add src/
+ 1429  git status
+ 1430  git commit -m 'EC-001: Adding form validation to limit max length and special chars'
+ 1431  ssh-add ~/.ssh/id_ed25519
+ 1432  git status
+ 1433  git push origin master
+ 1434  mvn spring-boot:run
+ 1435  git status
+ 1436  git add src/app/
+ 1437  git status
+ 1438  git commit -m 'EC-001: removing debug output'
+ 1439  git push origin master
+ 1440  mvn spring-boot:run
+ 1441  la
+ 1442  vi Dockerfile 
+ 1443  mvn clean package
+ 1444  docker build -t com.ec/svg-web-front .
+ 1445  docker run -itd --name=svg-web --network=svg-net3 --ip=192.188.1.4 -p 8898:8898 com.ec/svg-web-front
+ 1446  docker logs svg-web --tail -f
+ 1447  docker ps
+ 1448  docker stop svg-web 
+ 1449  docker rm svg-web 
+ 1450  docker images
+ 1451  docker image rm 5f7207f80289
+ 1452  cd ~/Documents/projects/svg-web-frontend/
+ 1453  ./ng build --watch
+ 1454  ssh-add ~/.ssh/id_cyberman_rsa.pub 
+ 1455  ssh-add ~/.ssh/id_cyberman_rsa
+ 1456  ssh cyberman@170.64.196.34 -P 2865
+ 1457  ssh cyberman@170.64.196.34 -p 2865
+ 1458  cat ~/.ssh/id_cyberman_rsa.pub 
+ 1459  ssh cyberman@170.64.196.34 -p 2865
+ 1460  history | grep mysql23
+ 1461  docker run --name=mysql23 --restart on-failure --network=svg-net3 --ip=192.188.1.2 -p 4406 -d container-registry.oracle.com/mysql/community-server:8.0
+ 1462  cd ~/Documents/projects/transcription_analyser/in/pl/
+ 1463  docker logs mysql23 
+ 1464  docker exec -it mysql23 /bin/bash
+ 1465  docker rm -f mysql23
+ 1466  docker run --name=mysql23 --restart on-failure --network=svg-net3 --ip=192.188.1.2 -p 4406:3306 -d container-registry.oracle.com/mysql/community-server:8.0
+ 1467  docker logs mysql23 
+ 1468  docker exec -it mysql23 /bin/bash
+ 1469  la /etc/apache2/sites-available/
+ 1470  la /etc/apache2/sites-enabled/
+ 1471  sudo ufw status
+ 1472  cat /etc/apache2/sites-enabled/researchpress.conf 
+ 1473  sudo cp /etc/apache2/sites-available/researchpress.conf /etc/apache2/sites-available/svg_web.conf
+ 1474  sudo vi /etc/apache2/sites-available/svg_web.conf 
+ 1475  sudo a2ensite svg_web.conf 
+ 1476  sudo service apache2 restart
+ 1477  sudo vi /etc/apache2/sites-available/svg_web.conf 
+ 1478  cat /etc/apache2/sites-enabled/svg_web.conf 
+ 1479  cat /etc/apache2/sites-enabled/000-default.conf 
+ 1480  sudo vi /etc/apache2/sites-available/svg_web.conf 
+ 1481  sudo service apache2 restart
+ 1482  sudo ufw status
+ 1483  sudo vi /etc/apache2/sites-available/svg_web.conf 
+ 1484  cat /etc/apache2/sites-available/svg_web.conf 
+ 1485  cat /etc/apache2/sites-available/000-default.conf 
+ 1486  cat /etc/apache2/sites-available/svg_web.conf  | grep -v "#"
+ 1487  cat /etc/apache2/sites-available/000-default.conf  | grep -v "#"
+ 1488  cat /etc/apache2/sites-available/cyberpress.conf  | grep -v "#"
+ 1489  la /etc/apache2/sites-enabled/
+ 1490  cat /etc/apache2/sites-available/researchpress.conf  | grep -v "#"
+ 1491  less /var/log/apache2/error.log
+ 1492  less /var/log/apache2/access.log
+ 1493  tail -200f /var/log/apache2/access.log
+ 1494  la /var/log/apache2/
+ 1495  cat /etc/apache2/sites-available/researchpress.conf  | grep -v "#"
+ 1496  cat /etc/apache2/sites-available/000-default.conf  | grep -v "#"
+ 1497  cat /etc/apache2/sites-available/svg_web.conf  | grep -v "#"
+ 1498  sudo a2dissite svg_web.conf 
+ 1499  sudo service apache2 reload
+ 1500  sudo service apache2 restart
+ 1501  sudo mv /etc/apache2/sites-available/svg_web.conf /etc/apache2/sites-available/svgweb.conf 
+ 1502  sudo vi /etc/apache2/sites-available/svgweb.conf 
+ 1503  sudo a2ensite svgweb.conf 
+ 1504  sudo service apache2 reload
+ 1505  sudo service apache2 restart
+ 1506  cat /etc/apache2/sites-available/svg_web.conf  | grep -v "#"
+ 1507  cat /etc/apache2/sites-available/svgweb.conf  | grep -v "#"
+ 1508  cat /etc/apache2/sites-available/000-default.conf  | grep -v "#"
+ 1509  la /etc/apache2/sites-enabled/
+ 1510  la /etc/apache2/sites-available/
+ 1511  cat /etc/apache2/sites-available/localbrowser.conf  | grep -v "#"
+ 1512  cat /etc/apache2/sites-available/cyberpress.conf  | grep -v "#"
+ 1513  cat /etc/apache2/sites-available/000-default.conf | grep -v "#"
+ 1514  cat /etc/apache2/sites-available/svgweb.conf | grep -v "#"
+ 1515  vi /etc/apache2/sites-available/svgweb.conf 
+ 1516  sudo vi /etc/apache2/sites-available/svgweb.conf 
+ 1517  cat /etc/apache2/sites-available/svgweb.conf | grep -v "#"
+ 1518  sudo vi /etc/apache2/sites-available/svgweb.conf 
+ 1519  sudo service apache2 reload
+ 1520  cat /etc/apache2/sites-available/000-default.conf | grep -v "#"
+ 1521  sudo vi /etc/apache2/sites-available/svgweb.conf 
+ 1522  sudo service apache2 reload
+ 1523  sudo vi /etc/apache2/sites-available/svgweb.conf 
+ 1524  sudo service apache2 reload
+ 1525  sudo vi /etc/apache2/sites-available/svgweb.conf 
+ 1526  sudo service apache2 reload
+ 1527  sudo vi /etc/apache2/sites-available/svgweb.conf 
+ 1528  sudo vi /etc/apache2/apache2.conf 
+ 1529  la /etc/apache2/
+ 1530  la /etc/apache2/mods-enabled/
+ 1531  sudo a2enmod proxy
+ 1532  sudo a2enmod proxy_http
+ 1533  sudo vi /etc/apache2/sites-available/svgweb.conf 
+ 1534  sudo service apache2 reload
+ 1535  sudo service apache2 restart
+ 1536  sudo vi /etc/apache2/sites-available/svgweb.conf 
+ 1537  sudo service apache2 restart
+ 1538  sudo vi /etc/apache2/sites-available/svgweb.conf 
+ 1539  sudo service apache2 restart
+ 1540  sudo vi /etc/apache2/sites-available/svgweb.conf 
+ 1541  la /etc/apache2/mods-enabled/
+ 1542  sudo vi /etc/apache2/sites-available/svgweb.conf 
+ 1543  sudo service apache2 restart
+ 1544  sudo vi /etc/apache2/sites-available/svgweb.conf 
+ 1545  sudo service apache2 restart
+ 1546  sudo vi /etc/apache2/sites-available/svgweb.conf 
+ 1547  sudo service apache2 restart
+ 1548  docker ps
+ 1549  sudo vi /etc/apache2/sites-available/svgweb.conf 
+ 1550  sudo service apache2 restart
+ 1551  sudo vi /etc/apache2/sites-available/svgweb.conf 
+ 1552  sudo service apache2 restart
+ 1553  sudo vi /etc/apache2/sites-available/svgweb.conf 
+ 1554  sudo service apache2 restart
+ 1555  sudo service apache2 reload
+ 1556  sudo vi /etc/apache2/sites-available/svgweb.conf 
+ 1557  sudo service apache2 reload
+ 1558  sudo ufw status
+ 1559  sudo vi /etc/apache2/sites-available/svgweb.conf 
+ 1560  perl dbadmin_setup.pl
+ 1561  docker network ls
+ 1562  docker network inspect svg-net3
+ 1563  perl dbadmin_setup.pl
+ 1564  docker ps
+ 1565  perl dbadmin_setup.pl
+ 1566  docker network inspect svg-net3
+ 1567  docker inspect svg-gen-svc 
+ 1568  cd /var/www/
+ 1569  la
+ 1570  sudo mkdir svg-web
+ 1571  la
+ 1572  sudo chown www-data svg-web/
+ 1573  sudo chgrp admin svg-web/
+ 1574  la
+ 1575  sudo chmod g+w svg-web/
+ 1576  la
+ 1577  cd svg-web/
+ 1578  vi index.html
+ 1579  la
+ 1580  la ../html/
+ 1581  la
+ 1582  sudo chown root index.html 
+ 1583  la
+ 1584  cd ../
+ 1585  la
+ 1586  sudo mv svg-web/ svgweb
+ 1587  la
+ 1588  la svgweb/
+ 1589  la html/
+ 1590  cd svgweb/
+ 1591  la
+ 1592  sudo chown www-data index.html 
+ 1593  sudo chgrp admin index.html 
+ 1594  la
+ 1595  sudo ufw status
+ 1596  la ../localbrowser/
+ 1597  la ../localbrowser/html/
+ 1598  sudo mkdir html
+ 1599  mv index.html html/
+ 1600  sudo mv index.html html/
+ 1601  tree .
+ 1602  la ../localbrowser/
+ 1603  la ../localbrowser/html/
+ 1604  sudo mv html/index.html .
+ 1605  sudo rm -rf html/
+ 1606  docker network inspect svg-net3
+ 1607  cd ~/Documents/projects/svg-generator/
+ 1608  history | grep docker
+ 1609  docker run -itd --name=svg-gen-svc --network=svg-net3 --ip=192.188.1.3 -e MYSQL_HOST=192.188.1.2 -e MYSQL_PORT=3306 -p 8900:8900 com.ec/svg-generator
+ 1610  docker logs svg-gen-svc --tail -f
+ 1611  docker logs svg-gen-svc --tail 200 -f
+ 1612  docker ps
+ 1613  docker rm -f svg-gen-svc
+ 1614  docker run -itd --name=svg-gen-svc --network=svg-net3 --ip=192.188.1.3 -e MYSQL_HOST=192.188.1.2 -e MYSQL_PORT=3306 -p 8900:8900 com.ec/svg-generator
+ 1615  docker logs svg-gen-svc --tail 200 -f
+ 1616  docker ps
+ 1617  docker rm -f svg-gen-svc 
+ 1618  docker images
+ 1619  cat Dockerfile 
+ 1620  mvn clean package
+ 1621  docker images
+ 1622  docker image rm eba6006a987d
+ 1623  docker build -t com.ec/svg-generator .
+ 1624  docker images
+ 1625  docker run -itd --name=svg-gen-svc --network=svg-net3 --ip=192.188.1.3 -e MYSQL_HOST=192.188.1.2 -e MYSQL_PORT=3306 -p 8900:8900 com.ec/svg-generator
+ 1626  docker logs svg-gen-svc --tail 200 -f
+ 1627  docker inspect mysql23 
+ 1628  docker ps
+ 1629  java -jar -DMYSQL_HOST=localhost -DMYSQL_PORT=4406 target/svg-generator-0.0.1-SNAPSHOT.jar 
+ 1630  docker rm -f svg-gen-svc 
+ 1631  java -jar -DMYSQL_HOST=localhost -DMYSQL_PORT=4406 target/svg-generator-0.0.1-SNAPSHOT.jar 
+ 1632  docker ps
+ 1633  docker ps -a
+ 1634  java -jar -DMYSQL_HOST=localhost -DMYSQL_PORT=4406 target/svg-generator-0.0.1-SNAPSHOT.jar 
+ 1635  java -jar -DMYSQL_HOST=192.188.1.2 -DMYSQL_PORT=4406 target/svg-generator-0.0.1-SNAPSHOT.jar 
+ 1636  docker ps
+ 1637  docker run -itd --name=svg-gen-svc --network=svg-net3 --ip=192.188.1.3 -e MYSQL_HOST=192.188.1.2 -e MYSQL_PORT=3306 -p 8900:8900 com.ec/svg-generator
+ 1638  docker ps
+ 1639  docker logs svg-gen-svc --tail 200 -f
+ 1640  git status
+ 1641  git diff
+ 1642  history | grep DB_HOST
+ 1643  docker ps
+ 1644  docker rm -f svg-gen-svc 
+ 1645  docker run -itd --name=svg-gen-svc --network=svg-net3 --ip=192.188.1.3 -e DB_HOST=192.188.1.2 -e DB_PORT=3306 -p 8900:8900 com.ec/svg-generator
+ 1646  docker logs svg-gen-svc --tail 200 -f
+ 1647  docker logs svg-gen-svc --tail 2000 -f
+ 1648  docker rm -f svg-gen-svc 
+ 1649  docker run -itd --name=svg-gen-svc --network=svg-net3 --ip=192.188.1.3 -e DB_HOST=192.188.1.2 -e DB_PORT=4406 -p 8900:8900 com.ec/svg-generator
+ 1650  docker logs svg-gen-svc --tail 2000 -f
+ 1651  docker rm -f svg-gen-svc 
+ 1652  java -jar -DDB_HOST=192.188.1.2 -DDB_PORT=ss06 target/svg-generator-0.0.1-SNAPSHOT.jar 
+ 1653  java -jar -DDB_HOST=192.188.1.2 -DDB_PORT=3306 target/svg-generator-0.0.1-SNAPSHOT.jar 
+ 1654  docker rm -f svg-gen-svc 
+ 1655  docker run -itd --name=svg-gen-svc --network=svg-net3 --ip=192.188.1.3 -e DB_HOST=192.188.1.2 -e DB_PORT=3306 -p 8900:8900 com.ec/svg-generator
+ 1656  docker logs svg-gen-svc --tail 2000 -f
+ 1657  cat Dockerfile 
+ 1658  vi Dockerfile 
+ 1659  docker rm -f svg-gen-svc 
+ 1660  mvn clean package
+ 1661  docker run -itd --name=svg-gen-svc --network=svg-net3 --ip=192.188.1.3 -e MYSQL_HOST=192.188.1.2 -e MYSQL_PORT=3306 -p 8900:8900 com.ec/svg-generator
+ 1662  docker logs svg-gen-svc --tail 2000 -f
+ 1663  docker images
+ 1664  docker image rm 4229c8540369
+ 1665  docker rm -f svg-gen-svc 
+ 1666  docker image rm 4229c8540369
+ 1667  docker build -t com.ec/svg-generator .
+ 1668  docker run -itd --name=svg-gen-svc --network=svg-net3 --ip=192.188.1.3 -e MYSQL_HOST=192.188.1.2 -e MYSQL_PORT=3306 -p 8900:8900 com.ec/svg-generator
+ 1669  docker logs svg-gen-svc --tail 2000 -f
+ 1670  docker rm -f svg-gen-svc 
+ 1671  docker run -itd --name=svg-gen-svc --network=svg-net3 --ip=192.188.1.3 -e MYSQL_HOST=192.188.1.2 -e MYSQL_PORT=4406 -p 8900:8900 com.ec/svg-generator
+ 1672  docker logs svg-gen-svc --tail 2000 -f
+ 1673  docker rm -f svg-gen-svc 
+ 1674  docker run -itd --name=svg-gen-svc --network=svg-net3 --ip=192.188.1.3 -e MYSQL_HOST=192.188.1.2 -e MYSQL_PORT=3306 -p 8900:8900 com.ec/svg-generator
+ 1675  docker logs svg-gen-svc --tail 2000 -f
+ 1676  la
+ 1677  tree target/
+ 1678  less src/main/resources/svg/all_paths.xml 
+ 1679  mvn spring-boot:run
+ 1680  docker rm -f svg-gen-svc 
+ 1681  mvn spring-boot:run
+ 1682  la target/classes/
+ 1683  la target/classes/svg/
+ 1684  mvn spring-boot:run
+ 1685  mvn clean package
+ 1686  docker images
+ 1687  docker image rm 7d5a4ba57ad7
+ 1688  cat Dockerfile 
+ 1689  docker build -t com.ec/svg-generator .
+ 1690  docker run -itd --name=svg-gen-svc --network=svg-net3 --ip=192.188.1.3 -e MYSQL_HOST=192.188.1.2 -e MYSQL_PORT=3306 -p 8900:8900 com.ec/svg-generator
+ 1691  docker logs svg-gen-svc --tail 200 -f
+ 1692  docker rm -f svg-gen-svc 
+ 1693  java -jar -DDB_HOST=192.188.1.2 -DDB_PORT=3306 target/svg-generator-0.0.1-SNAPSHOT.jar 
+ 1694  mvn clean package
+ 1695  java -jar -DDB_HOST=192.188.1.2 -DDB_PORT=3306 target/svg-generator-0.0.1-SNAPSHOT.jar 
+ 1696  mvn clean package
+ 1697  java -jar -DDB_HOST=192.188.1.2 -DDB_PORT=3306 target/svg-generator-0.0.1-SNAPSHOT.jar 
+ 1698  mvn clean package
+ 1699  java -jar -DDB_HOST=192.188.1.2 -DDB_PORT=3306 target/svg-generator-0.0.1-SNAPSHOT.jar 
+ 1700  docker images
+ 1701  docker image rm c2cbc32de232
+ 1702  docker build -t com.ec/svg-generator .
+ 1703  docker run -itd --name=svg-gen-svc --network=svg-net3 --ip=192.188.1.3 -e MYSQL_HOST=192.188.1.2 -e MYSQL_PORT=3306 -p 8900:8900 com.ec/svg-generator
+ 1704  docker logs svg-gen-svc --tail 200 -f
+ 1705  docker images
+ 1706  vi Dockerfile 
+ 1707  docker build -t com.ec/svg-generator .
+ 1708  docker images
+ 1709  docker run -itd --name=svg-gen-svc --network=svg-net3 --ip=192.188.1.3 -e MYSQL_HOST=192.188.1.2 -e MYSQL_PORT=3306 -p 8900:8900 com.ec/svg-generator
+ 1710  docker logs svg-gen-svc --tail 200 -f
+ 1711  mvn spring-boot:run
+ 1712  docker run -itd --name=svg-gen-svc --network=svg-net3 --ip=192.188.1.3 -e MYSQL_HOST=192.188.1.2 -e MYSQL_PORT=3306 -p 8900:8900 com.ec/svg-generator
+ 1713  docker ps
+ 1714  docker logs svg-gen-svc --tail 200 -f
+ 1715  mvn spring-boot:run
+ 1716  docker run -itd --name=svg-gen-svc --network=svg-net3 --ip=192.188.1.3 -e MYSQL_HOST=192.188.1.2 -e MYSQL_PORT=3306 -p 8900:8900 com.ec/svg-generator
+ 1717  docker logs svg-gen-svc --tail 200 -f
+ 1718  docker rm -f svg-gen-svc 
+ 1719  docker ps
+ 1720  mvn clean package
+ 1721  mvn spring-boot:run
+ 1722  docker images 
+ 1723  docker ps
+ 1724  docker images rm 905721986927
+ 1725  docker image rm 905721986927
+ 1726  docker image rm 7bf9a1441e66
+ 1727  mvn clean package
+ 1728  docker build -t com.ec/svg-generator .
+ 1729  docker run -itd --name=svg-gen-svc --network=svg-net3 --ip=192.188.1.3 -e MYSQL_HOST=192.188.1.2 -e MYSQL_PORT=3306 -p 8900:8900 com.ec/svg-generator
+ 1730  docker logs svg-gen-svc --tail 200 -f
+ 1731  cd ../svg-web-frontend/
+ 1732  mvn clean package
+ 1733  mvn spring-boot:run -Dspring-boot-run.arguments=--svg.gen.svc.host=192.188.1.3
+ 1734  mvn spring-boot:run -Dspring-boot.run.arguments=--svg.gen.svc.host=192.188.1.3
+ 1735  mvn spring-boot:run -DSVG_GEN_SVC_HOST=192.188.1.3
+ 1736  mvn clean package
+ 1737  java -jar -DSVG_GEN_SVC_HOST=192.188.1.3 -DSVG_GEN_SVC_PORT=8900 target/svg-web-frontend-0.0.1-SNAPSHOT.jar 
+ 1738  java -jar -DSVG_GEN_SVC_HOST=192.188.1.2 -DSVG_GEN_SVC_PORT=8900 target/svg-web-frontend-0.0.1-SNAPSHOT.jar 
+ 1739  java -jar -DSVG_GEN_SVC_HOST=192.188.1.3 -DSVG_GEN_SVC_PORT=8900 target/svg-web-frontend-0.0.1-SNAPSHOT.jar 
+ 1740  java -jar -DSVG_GEN_SVC_HOST=localhost -DSVG_GEN_SVC_PORT=8900 target/svg-web-frontend-0.0.1-SNAPSHOT.jar 
+ 1741  docker ps
+ 1742  vi Dockerfile 
+ 1743  docker images
+ 1744  docker build -t com.ec/svg-web .
+ 1745  docker run -itd --name=svg-web --network=svg-net3 --ip=192.188.1.4 -e SVG_SVC_HOST=192.188.1.3 -e SVG_SVC_PORT=8900 -p 8898:8898 com.ec/svg-web-front
+ 1746  docker run -itd --name=svg-web --network=svg-net3 --ip=192.188.1.4 -e SVG_SVC_HOST=192.188.1.3 -e SVG_SVC_PORT=8900 -p 8898:8898 com.ec/svg-web
+ 1747  docker inspect svg-web 
+ 1748  docker ps
+ 1749  docker images
+ 1750  docker rm -f svg-web
+ 1751  docker rm -f svg-gen-svc 
+ 1752  vi Dockerfile 
+ 1753  docker images
+ 1754  docker image rm 9f0d4966d2b6
+ 1755  docker image rm 8528fb515fb0
+ 1756  docker build -t com.ec/svg-web-front .
+ 1757  docker images
+ 1758  docker run -itd --name=svg-web --network=svg-net3 --ip=192.188.1.4 -e SVG_SVC_HOST=192.188.1.3 -e SVG_SVC_PORT=8900 -p 8898:8898 com.ec/svg-web-front
+ 1759  docker logs --tail 200 -f svg-web 
+ 1760  docker ps
+ 1761  docker images
+ 1762  docker rm -rf svg-web
+ 1763  docker rm -f svg-web
+ 1764  docker rm -f svg-gen-svc 
+ 1765  mvn spring-boot:run
+ 1766  docker images
+ 1767  docker image rm 6273150b8e04
+ 1768  mvn clean package
+ 1769  docker build -t com.ec/svg-web-front .
+ 1770  docker run -itd --name=svg-web --network=svg-net3 --ip=192.188.1.4 -e SVG_SVC_HOST=192.188.1.3 -e SVG_SVC_PORT=8900 -p 8898:8898 com.ec/svg-web-front
+ 1771  docker logs svg-web --tail 200 -f
+ 1772  git status
+ 1773  git diff
+ 1774  docker rm -f svg-web 
+ 1775  docker rm -f svg-gen-svc 
+ 1776  mvn spring-boot:run
+ 1777  git status
+ 1778  git diff
+ 1779  docker ps
+ 1780  mvn clean package
+ 1781  docker images
+ 1782  docker image rm e853f3436cf6
+ 1783  docker build -t com.ec/svg-web-front
+ 1784  docker build -t com.ec/svg-web-front .
+ 1785  docker images
+ 1786  docker run -itd --name=svg-web --network=svg-net3 --ip=192.188.1.4 -e SVG_SVC_HOST=192.188.1.3 -e SVG_SVC_PORT=8900 -p 8898:8898 com.ec/svg-web-front
+ 1787  docker ps
+ 1788  docker rm -f svg-web 
+ 1789  docker images
+ 1790  docker image rm 07618d8bef10
+ 1791  docker images
+ 1792  mvn clean package
+ 1793  mvn spring-boot:run
+ 1794  git status
+ 1795  git diff
+ 1796  docker images
+ 1797  docker build -t com.ec/svg-web-front .
+ 1798  docker run -itd --name=svg-web --network=svg-net3 --ip=192.188.1.4 -e SVG_SVC_HOST=192.188.1.3 -e SVG_SVC_PORT=8900 -p 8898:8898 com.ec/svg-web-front
+ 1799  docker logs svg-web --tail 200 -f
+ 1800  docker images
+ 1801  docker image rm b39afb2e4243
+ 1802  docker rm -f svg-web 
+ 1803  docker image rm b39afb2e4243
+ 1804  mvn clean package
+ 1805  docker build -t com.ec/svg-web-front .
+ 1806  docker run -itd --name=svg-web --network=svg-net3 --ip=192.188.1.4 -e SVG_SVC_HOST=192.188.1.3 -e SVG_SVC_PORT=8900 -p 8898:8898 com.ec/svg-web-front
+ 1807  docker logs svg-web --tail 200 -f
+ 1808  docker ps
+ 1809  docker rm -f svg-web 
+ 1810  mvn clean package
+ 1811  mvn spring-boot:run
+ 1812  mvn clean package
+ 1813  mvn spring-boot:run
+ 1814  mvn clean package
+ 1815  docker build -t com.ec/svg-web-front .
+ 1816  docker run -itd --name=svg-web --network=svg-net3 --ip=192.188.1.4 -e SVG_SVC_HOST=192.188.1.3 -e SVG_SVC_PORT=8900 -p 8898:8898 com.ec/svg-web-front
+ 1817  docker logs svg-web --tail 200 -f
+ 1818  mvn clean package
+ 1819  mvn spring-boot:run
+ 1820  docker rm -f svg-web 
+ 1821  mvn spring-boot:run
+ 1822  mvn clean package
+ 1823  mvn spring-boot:run
+ 1824  git status
+ 1825  git diff
+ 1826  git status
+ 1827  git diff
+ 1828  git add src/app/components/svg-render/svg-render.component.html 
+ 1829  git commit -m 'EC-001: Bug fixing double submit event on render form'
+ 1830  git status
+ 1831  git diff src/main/java/
+ 1832  git add src/main/resources/
+ 1833  git add src/main/java/
+ 1834  git status
+ 1835  git add Dockerfile 
+ 1836  git commit -m 'EC-001: Introducing Dockerfile for container deployment. Making remote svg-gen service details configurable via docker run cmd.'
+ 1837  git status
+ 1838  ssh-add ~/.ssh/id_ed25519
+ 1839  git status
+ 1840  git add src/app/
+ 1841  git diff init/
+ 1842  git diff src/index.html
+ 1843  git add src/index.html 
+ 1844  git status
+ 1845  git commit -m 'EC-001: Setting context path as svgweb for ng app. Adding url encoding to fetch service to enable ? char.'
+ 1846  git status
+ 1847  git push origin master
+ 1848  cd ../svg-generator/
+ 1849  git status
+ 1850  git add src/main/java/
+ 1851  git status
+ 1852  git add src/main/resources/application.properties 
+ 1853  git add src/main/resources/resource-properties.yml 
+ 1854  git status
+ 1855  git add Dockerfile 
+ 1856  git status
+ 1857  git log
+ 1858  git commit -m 'EC-003: Introducing Dockerfile. Refactoring property references to use classpath loading.'
+ 1859  git push origin master
+ 1860  cd ../svg-web-frontend/
+ 1861  git status
+ 1862  ./ng generate environments
+ 1863  git status
+ 1864  git diff angular.json
+ 1865  docker ps
+ 1866  ./ng build --watch
+ 1867  man scp
+ 1868  ssh-add ~/.ssh/id_cyberman_rsa
+ 1869  ssh cyberman@170.64.196.34 -p 2865
+ 1870  ssh-add ~/.ssh/id_cyberman_rsa
+ 1871  ssh cyberman@170.64.196.34 -p 2865
+ 1872  cat /etc/apache2/sites-enabled/svgweb.conf 
+ 1873  sudo cp /etc/apache2/sites-available/000-default.conf /etc/apache2/sites-available/000-default_bak.txt
+ 1874  sudo vi /etc/apache2/sites-available/000-default
+ 1875  sudo vi /etc/apache2/sites-available/000-default.conf 
+ 1876  sudo cp /etc/apache2/sites-available/000-default.conf /etc/apache2/sites-available/000-default_bak_min.txt
+ 1877  sudo vi /etc/apache2/sites-available/000-default_bak_min.txt 
+ 1878  sudo cp /etc/apache2/sites-available/000-default_bak_min.txt /etc/apache2/sites-available/000-default.conf 
+ 1879  sudo vi /etc/apache2/sites-available/000-default.conf 
+ 1880  sudo service apache2 restart
+ 1881  sudo systemctl restart apache2
+ 1882  sudo a2enmod rewrite
+ 1883  sudo a2enmod proxy
+ 1884  sudo service apache2 reload
+ 1885  sudo service apache2 status
+ 1886  sudo vi /etc/apache2/sites-available/000-default.conf 
+ 1887  sudo service apache2 reload
+ 1888  sudo service apache2 restart
+ 1889  sudo service apache2 status
+ 1890  sudo vi /etc/apache2/sites-available/000-default.conf 
+ 1891  sudo service apache2 reload
+ 1892  sudo service apache2 restart
+ 1893  sudo service apache2 status
+ 1894  sudo vi /etc/apache2/sites-available/000-default.conf 
+ 1895  sudo service apache2 reload
+ 1896  sudo service apache2 status
+ 1897  sudo service apache2 restart
+ 1898  sudo vi /etc/apache2/sites-available/000-default.conf 
+ 1899  sudo service apache2 reload
+ 1900  sudo service apache2 restart
+ 1901  sudo vi /etc/apache2/sites-available/000-default.conf 
+ 1902  sudo service apache2 restart
+ 1903  sudo service apache2 reload
+ 1904  sudo service apache2 restart
+ 1905  sudo vi /etc/apache2/sites-available/000-default.conf 
+ 1906  sudo service apache2 reload
+ 1907  sudo vi /etc/apache2/sites-available/000-default.conf 
+ 1908  sudo service apache2 reload
+ 1909  sudo vi /etc/apache2/sites-available/000-default.conf 
+ 1910  cd ~/Documents/projects/svg-generator/
+ 1911  la
+ 1912  sudo tail -200f /var/log/apache2/error.log
+ 1913  sudo tail -200f /var/log/apache2/access.log
+ 1914  cd ~/Documents/projects/svg-web-frontend/
+ 1915  grep http target/classes/static/
+ 1916  grep http target/classes/static/*
+ 1917  grep svgweb target/classes/static/*
+ 1918  grep -rl svgweb target/classes/static/*
+ 1919  less target/classes/static/main.js
+ 1920  la
+ 1921  git status
+ 1922  git diff
+ 1923  git status
+ 1924  git add src/environments/
+ 1925  git status
+ 1926  git add angular.json src/app/services/svg-fetch.service.ts 
+ 1927  git status
+ 1928  git log
+ 1929  git commit -m 'EC-001: First attempt at introducing parameterized service URLs using ng environment'
+ 1930  mvn clean package
+ 1931  docker build -t com.ec/svg-web-front .
+ 1932  docker images
+ 1933  docker image rm 81ab7273e9b5
+ 1934  docker images
+ 1935  history | grep save
+ 1936  la
+ 1937  docker save com.ec/svg-web-front:latest | gzip > svg-web-front.tar.gz
+ 1938  la
+ 1939  history | grep sftp
+ 1940  sftp -oPort=2865 cyberman@170.64.196.34
+ 1941  rm -rf svg-web-front.tar.gz 
+ 1942  docker images
+ 1943  docker image rm 4a86982f7c67
+ 1944  git status
+ 1945  git diff
+ 1946  mvn clean package
+ 1947  docker build -t com.ec/svg-web-front .
+ 1948  docker save com.ec/svg-web-front:latest | gzip > svg-web-front.tar.gz
+ 1949  sftp -oPort=2865 cyberman@170.64.196.34
+ 1950  cd ~/Documents/projects/svg-web-frontend/
+ 1951  git status
+ 1952  git diff src/app/services/svg-fetch.service.ts
+ 1953  docker pss -a
+ 1954  docker ps -a
+ 1955  docker start mysql23
+ 1956  docker start svg-gen-svc 
+ 1957  mvn clean package
+ 1958  mvn spring-boot:run
+ 1959  cd ~/Documents/projects/svg-web-frontend/
+ 1960  ./ng build --configuration development --watch
+ 1961  cd ~/Documents/projects/
+ 1962  la
+ 1963  rm -rf svg-web-front.tar.gz 
+ 1964  mv svg-gen.tar.gz svg-generator/
+ 1965  history | grep sftp
+ 1966  cd ~/Documents/projects/svg-generator/
+ 1967  cd /var/www/html/
+ 1968  la
+ 1969  sudo vi .htaccess
+ 1970  sudo systemctl reload apache2
+ 1971  sudo systemctl status apache2
+ 1972  sudo vi /etc/apache2/sites-available/000-default.conf 
+ 1973  sudo systemctl reload apache2
+ 1974  sudo systemctl status apache2
+ 1975  sudo vi /etc/apache2/sites-available/000-default.conf 
+ 1976  sudo systemctl reload apache2
+ 1977  sudo systemctl status apache2
+ 1978  sudo vi /etc/apache2/sites-available/000-default.conf 
+ 1979  sudo vi .htaccess 
+ 1980  sudo systemctl reload apache2
+ 1981  sudo vi .htaccess 
+ 1982  sudo systemctl reload apache2
+ 1983  sudo tail -200f /var/log/apache2/error.log
+ 1984  la ~/.ssh/
+ 1985  ssh-add ~/.ssh/id_vp_rsa
+ 1986  ssh edwardca@s07ge.syd5.hostingplatform.net.au -p 2683
+ 1987  cat ~/.ssh/id_cyberman_rsa.pub 
+ 1988  ssh cyberadmin@170.64.168.86 -p 3865
+ 1989  ssh-add ~/.ssh/id_cyberman_rsa
+ 1990  ssh cyberadmin@170.64.168.86 -p 3865
+ 1991  ssh cyberadmin@170.64.168.86 -p 3865 -v
+ 1992  ssh cyberadmin@170.64.168.86 -p 22 -v
+ 1993  ssh cyberadmin@170.64.168.86 -p 22 
+ 1994  ssh cyberadmin@170.64.168.86 -p  2965
+ 1995  ssh cyberadmin@170.64.168.86 -p 22
+ 1996  ssh-add ~/.ssh/id_cyberman_rsa
+ 1997  ssh cyberman@170.64.196.34 -p 2865
+ 1998  ssh cyberman@170.64.196.34 -p 2865 -v
+ 1999  ssh cyberman@170.64.196.34 -p 2865 
+ 2000  ssh cyberadmin@170.64.168.86 -p 2965
+ 2001  cd ~/Documents/projects/svg-generator/
+ 2002  la
+ 2003  git status
+ 2004  cd ../svg-web-frontend/
+ 2005  git status
+ 2006  git diff
+ 2007  mvn clean compile
+ 2008  docker images
+ 2009  docker image rm 3114e6afa4bc
+ 2010  docker build -t com.ec/svg-web-front .
+ 2011  mvn clean package
+ 2012  docker build -t com.ec/svg-web-front .
+ 2013  history | grep save
+ 2014  rm -rf svg-web-front.tar.gz 
+ 2015  docker images
+ 2016  docker save com.ec/svg-web-front:latest | gzip > svg-web-front.tar.gz
+ 2017  sftp cyberman@170.64.196.34
+ 2018  sftp oPort=2865 cyberman@170.64.196.34
+ 2019  sftp -oPort=2865 cyberman@170.64.196.34
+ 2020  git status
+ 2021  git diff
+ 2022  mvn clean package
+ 2023  docker build -t com.ec/svg-web-front .
+ 2024  docker save com.ec/svg-web-front:latest | gzip > svg-web-front.tar.gz
+ 2025  sftp -oPort=2865 cyberman@170.64.196.34
+ 2026  docker images
+ 2027  docker image rm 186c6326348c
+ 2028  docker images
+ 2029  la t
+ 2030  la target/
+ 2031  docker build -t com.ec/svg-web-front .
+ 2032  la
+ 2033  docker images
+ 2034  docker save com.ec/svg-web-front:latest | gzip > svg-web-front.tar.gz
+ 2035  la
+ 2036  sftp -oPort=2865 cyberman@170.64.196.34
+ 2037  git status
+ 2038  git diff
+ 2039  docker images
+ 2040  docker image rm d59df4827f05
+ 2041  mvn clean package
+ 2042  la
+ 2043  rm -rf svg-web-front.tar.gz 
+ 2044  la target/
+ 2045  history
+ 2046  docker build -t com.ec/svg-web-front .
+ 2047  docker images
+ 2048  docker save com.ec/svg-web-front:latest | gzip > svg-web-front.tar.gz
+ 2049  sftp -oPort=2865 cyberman@170.64.196.34
+ 2050  history
+ 2051  history > sh/cmd.notes.txt
+ 1026  ./ng serve
+ 1027  ./ng build --watch
+ 1028  cd ~/Documents/projects/
+ 1029  git clone https://github.com/dsyer/spring-boot-angular.git
+ 1030  la
+ 1031  rm -rf spring-boot-angular
+ 1032  git clone https://github.com/dsyer/spring-boot-angular.git
+ 1033  cd spring-boot-angular
+ 1034  mvn spring-boot:run
+ 1035  la target/classes/static/
+ 1036  sudo ufw allow 8898
+ 1037  sudo ufw allow 8800
+ 1038  sudo ufw allow 8900
+ 1039  sudo ufw allow 9900
+ 1040  sudo ufw allow 9190
+ 1041  sudo ufw status
+ 1042  cd /
+ 1043  df -k .
+ 1044  cd ~/Downloads/
+ 1045  la
+ 1046  sudo dpkg -i google-chrome-stable_current_amd64.deb 
+ 1047  cd ~/Documents/projects/spring-boot-angular-web-template/
+ 1048  mvn spring-boot:run
+ 1049  curl 'http://localhost:8900/svg_gen/generate/test'
+ 1050  cd ~/Documents/projects/
+ 1051  cd spring-boot-angular-web-template/
+ 1052  la
+ 1053  rm -rf node_modules/
+ 1054  la
+ 1055  less .gitignore 
+ 1056  git init
+ 1057  git status
+ 1058  la node/
+ 1059  vi .gitignore 
+ 1060  git status
+ 1061  tree init/
+ 1062  la init/
+ 1063  git add src/
+ 1064  git status
+ 1065  git add *.json
+ 1066  git status
+ 1067  la
+ 1068  git status
+ 1069  git add pom.xml npm ng
+ 1070  git status
+ 1071  git add init/
+ 1072  git add .gitignore 
+ 1073  git status
+ 1074  git commit -m "EC-001: Initial commit"
+ 1075  ssh-add ~/.ssh/id_ed25519
+ 1076  git log
+ 1077  git remote add origin github@github.com:edwardcalderon2010/spring-boot-angular-web-template.git
+ 1078  git push -u origin master
+ 1079  history | grep origin
+ 1080  git remote
+ 1081  git remote -d origin
+ 1082  git remote remove origin
+ 1083  git remote
+ 1084  git remote add origin git@github.com:edwardcalderon2010/spring-boot-angular-web-template.git
+ 1085  git remote
+ 1086  git push -u origin master
+ 1087  git pull
+ 1088  git pull master master
+ 1089  git pull origin master
+ 1090  git rebase origin master
+ 1091  git rebase origin
+ 1092  git rebase
+ 1093  git rebase master
+ 1094  git fetch
+ 1095  la
+ 1096  git log
+ 1097  git merge
+ 1098  git pull origin master
+ 1099  git pull --rebase origin master
+ 1100  la
+ 1101  git status
+ 1102  git log
+ 1103  git push -u origin master
+ 1104  mvn spring-boot:run
+ 1105  git fetch
+ 1106  git branch
+ 1107  git pull
+ 1108  git branch
+ 1109  git checkout --track origin/dev
+ 1110  git branch
+ 1111  mvn dependencies:tree
+ 1112  mvn dependency:tree
+ 1113  ./ng version
+ 1114  mvn -v
+ 1115  git pull
+ 1116  git status
+ 1117  cd ../svg-web-app/
+ 1118  la
+ 1119  mvn spring-boot:run
+ 1120  la target/classes/
+ 1121  la target/classes/static/
+ 1122  mvn clean compile
+ 1123  mvn spring-boot:run
+ 1124  la
+ 1125  la target/classes/static/
+ 1126  la target/classes/
+ 1127  mvn spring-boot:run
+ 1128  la
+ 1129  cd ../
+ 1130  rm -rf svg-web-app/
+ 1131  la
+ 1132  cd spring-boot-angular-web-template/
+ 1133  git status
+ 1134  vi pom.xml 
+ 1135  grep svg pom.xml 
+ 1136  git diff
+ 1137  vi pom.xml 
+ 1138  git add pom.xml 
+ 1139  git commit -m "EC-001: Editing pom details to be more generic"
+ 1140  git push origin
+ 1141  git push -u origin dev
+ 1142  la
+ 1143  la node
+ 1144  git checkout master
+ 1145  git pull
+ 1146  cd ../
+ 1147  la
+ 1148  mkdir svg-web-frontend
+ 1149  cd svg-web-frontend/
+ 1150  cp ../spring-boot-angular-web-template/init/ .
+ 1151  cp -r ../spring-boot-angular-web-template/init/ .
+ 1152  la
+ 1153  cp ../spring-boot-angular-web-template/npm .
+ 1154  cp ../spring-boot-angular-web-template/ng .
+ 1155  cd init/
+ 1156  la
+ 1157  unzip sample-app.zip -d unzipped
+ 1158  cd unzipped/
+ 1159  la
+ 1160  rm -rf mvnw*
+ 1161  la
+ 1162  rm -rf HELP.md .gitignore .mvn
+ 1163  la
+ 1164  mv src/ ../../
+ 1165  cd ../
+ 1166  rm -rf unzipped/
+ 1167  la
+ 1168  cp pom.xml ../
+ 1169  cd ../
+ 1170  la
+ 1171  cp init/application.yml src/main/resources/
+ 1172  mvn clean compile
+ 1173  ./npm install @angular/cli
+ 1174  nvm v
+ 1175  nvm ls
+ 1176  nvm use v18.13.0
+ 1177  rm -rf node
+ 1178  rm -rf node_modules/
+ 1179  la
+ 1180  mvn clean compile
+ 1181  la
+ 1182  rm -rf node
+ 1183  rm -rf node_modules/
+ 1184  rm -rf package*
+ 1185  la
+ 1186  mvn clean compile
+ 1187  ./npm install @angular/cli
+ 1188  la
+ 1189  rm -rf node
+ 1190  rm -rf node_modules/
+ 1191  rm -rf package*
+ 1192  la
+ 1193  vi pom.xml 
+ 1194  nvm install v18.19.1
+ 1195  nvm use 18.19.1
+ 1196  la
+ 1197  mvn clean compile
+ 1198  ./npm install @angular/cli
+ 1199  ./ng new client --no-standalone
+ 1200  la
+ 1201  cd client/
+ 1202  la
+ 1203  rm -rf node_modules/
+ 1204  la
+ 1205  rm -rf .git .gitignore .vscode/ .editorconfig README.md 
+ 1206  la
+ 1207  tree p
+ 1208  tree public/
+ 1209  rm -rf public/
+ 1210  la
+ 1211  cp -r src/ ../
+ 1212  cp *.json ../
+ 1213  cd ../
+ 1214  rm -rf client/
+ 1215  la
+ 1216  grep "outputPath" angular.json 
+ 1217  sed -i 's,dist/client,target/classes/static,g' angular.json 
+ 1218  grep "outputPath" angular.json 
+ 1219  vi angular.json 
+ 1220  vi pom.xml 
+ 1221  mvn clean compile
+ 1222  la target/classes/static/
+ 1223  vi src/main/resources/application.yml 
+ 1224  rm -rf src/main/resources/application.properties 
+ 1225  la
+ 1226  mvn spring-boot:run
+ 1227  la
+ 1228  git init
+ 1229  git status
+ 1230  la
+ 1231  cp ../spring-boot-angular-web-template/.gitignore .
+ 1232  la
+ 1233  git status
+ 1234  git add src pom.xml *.json
+ 1235  git status
+ 1236  git add ng npm
+ 1237  git add init/
+ 1238  git add .gitignore 
+ 1239  git status
+ 1240  git add pom.xml 
+ 1241  la
+ 1242  git status
+ 1243  git commit -m "EC-000: Initial commit. Default Angular placeholder page."
+ 1244  mvn spring-boot:run
+ 1245  la target/classes/
+ 1246  la target/classes/static/
+ 1247  mvn spring-boot:run
+ 1248  cd ~/Documents/projects/svg-generator/
+ 1249  mvn spring-boot:run
+ 1250  curl localhost:8900/svg_gen/generateAsJSON/hello
+ 1251  cd ~/Documents/projects/svg-web-frontend/
+ 1252  ./ng build --watch
+ 1253  ./ng generate interface model/svgResponse
+ 1254  ./ng build --watch
+ 1255  cd ~/Documents/projects/svg-web-frontend/
+ 1256  mvn spring-boot:run
+ 1257  cd ~/Documents/projects/svg-generator/
+ 1258  mvn spring-boot:run
+ 1259  git status
+ 1260  git add src/main/java/
+ 1261  git status
+ 1262  git diff pom.xml
+ 1263  git status
+ 1264  git add pom.xml 
+ 1265  git diff src/main/resources/application.properties
+ 1266  git add src/main/resources/application.properties 
+ 1267  git status
+ 1268  git log
+ 1269  git status
+ 1270  git commit -m 'EC-003: Minor updates to support web front end access. Tidying up font spacing.'
+ 1271  git push origin master
+ 1272  cd ~/Documents/projects/svg-web-frontend/
+ 1273  mvn spring-boot:run
+ 1274  cd ~/Documents/projects/svg-web-frontend/
+ 1275  ./ng build --watch
+ 1276  cd ~/Documents/projects/svg-generator/
+ 1277  mvn spring-boot:run
+ 1278  cd ~/Documents/projects/svg-web-frontend/
+ 1279  mvn spring-boot:run
+ 1280  mvn clean compile
+ 1281  mvn spring-boot:run
+ 1282  git status
+ 1283  git add angular.json src/app/ src/main/java/
+ 1284  git status
+ 1285  git log
+ 1286  git commit -m 'EC-001: First major milestone: angular form/ui can load and animate SVG font content'
+ 1287  ssh-add ~/.ssh/id_ed25519
+ 1288  git push origin master
+ 1289  ./ng build --watch
+ 1290  cd ~/Documents/projects/svg-generator/
+ 1291  mvn spring-boot:run
+ 1292  git status
+ 1293  la
+ 1294  mkdir sh
+ 1295  cd sh/
+ 1296  docker run --name=mysql23 --restart on-failure -d container-registry.oracle.com/mysql/community-server:8.0
+ 1297  docker ps
+ 1298  docker logs mysql23
+ 1299  docker exec -it mysql23 /bin/bash
+ 1300  docker stop mysql23
+ 1301  docker rm mysql23
+ 1302  docker run --name=mysql23 --restart on-failure -p 4406:3306 -d container-registry.oracle.com/mysql/community-server:8.0
+ 1303  docker ps
+ 1304  docker logs mysql23
+ 1305  docker exec -it mysql23 /bin/bash
+ 1306  docker ps
+ 1307  docker images
+ 1308  docker exec -it mysql23 /bin/bash
+ 1309  docker ps
+ 1310  history | grep docker
+ 1311  docker run --name=mysql46 --restart on-failure --network=svg-net -p 4406:3306 -d container-registry.oracle.com/mysql/community-server:8.0
+ 1312  docker run --name=mysql46 --restart on-failure --network=svg-net -p 5506:3306 -d container-registry.oracle.com/mysql/community-server:8.0
+ 1313  docker stop mysql46
+ 1314  docker rm mysql46
+ 1315  docker run --name=mysql46 --restart on-failure --network=svg-net -p 5506:3306 -d container-registry.oracle.com/mysql/community-server:8.0
+ 1316  docker network ls
+ 1317  docker ls
+ 1318  docker ps
+ 1319  docker exec -it mysql23 /bin/bash
+ 1320  docker exec -it mysql46 /bin/bash
+ 1321  docker stop mysql46
+ 1322  docker rm mysql46
+ 1323  cd ../
+ 1324  la
+ 1325  docker ps
+ 1326  docker stop svg-gen-svc
+ 1327  docker rm svg-gen-svc
+ 1328  docker run --name=mysql46 --restart on-failure --network=svg-net -p 5506:3306 -d container-registry.oracle.com/mysql/community-server:8.0
+ 1329  docker exec -it mysql46 /bin/bash
+ 1330  ipconfig
+ 1331  ifconfig
+ 1332  docker stop mysql23
+ 1333  docker rm mysql23
+ 1334  docker ps
+ 1335  docker stop mysql46
+ 1336  docker rm mysql46
+ 1337  docker network
+ 1338  docker network ls
+ 1339  docker network rm svg-net
+ 1340  docker network create --subnet 192.188.1.0/24 svg-net2
+ 1341  docker run --name=mysql23 --restart on-failure --network=svg-net2 -p 4406:3306 -d container-registry.oracle.com/mysql/community-server:8.0
+ 1342  docker stop mysql23
+ 1343  docker rm mysql23
+ 1344  docker run --name=mysql23 --restart on-failure --network=svg-net2 --ip=192.188.1.1 -p 4406:3306 -d container-registry.oracle.com/mysql/community-server:8.0
+ 1345  docker ps
+ 1346  docker stop mysql23
+ 1347  docker rm mysql23
+ 1348  docker run --name=mysql23 --restart on-failure --network=svg-net2 --ip=192.188.1.1 -p 4406:3306 -d container-registry.oracle.com/mysql/community-server:8.0
+ 1349  docker stop mysql23
+ 1350  docker rm mysql23
+ 1351  docker containers
+ 1352  docker container
+ 1353  docker ls
+ 1354  docker containers ls
+ 1355  docker container ls
+ 1356  docker prune
+ 1357  docker container prune
+ 1358  docker run --name=mysql23 --restart on-failure --network=svg-net2 --ip=192.188.1.1 -p 4406:3306 -d container-registry.oracle.com/mysql/community-server:8.0
+ 1359  docker ps
+ 1360  docker container inspect mysql23
+ 1361  docker container prune
+ 1362  docker network
+ 1363  docker network ls
+ 1364  docker images
+ 1365  docker stop svg-gen-svc
+ 1366  docker ps -a
+ 1367  docker ps --help
+ 1368  netstat -aNp
+ 1369  netstat -aNp | grep LIST
+ 1370  netstat -aNp | grep 3306
+ 1371  netstat -aNp | grep 4406
+ 1372  sudo netstat -aNp | grep 4406
+ 1373  sudo netstat -aNp | grep 3306
+ 1374  sudo netstat -aNp | grep mysql
+ 1375  history | grep subnet
+ 1376  docker run --name=mysql23 --restart on-failure --network=svg-net2 --ip=192.188.1.1  -d container-registry.oracle.com/mysql/community-server:8.0
+ 1377  docker ps -a
+ 1378  docker stop mysql23
+ 1379  docker rm mysql23
+ 1380  docker run --name=mysql23 --restart on-failure --network=svg-net2 --ip=192.188.1.1  -d container-registry.oracle.com/mysql/community-server:8.0
+ 1381  docker exec -it mysql23 /bin/bash
+ 1382  docker network rm svg-net2
+ 1383  docker network ls
+ 1384  docker network inspect wikinet
+ 1385  docker network inspect host
+ 1386  docker network inspect bridge
+ 1387  docker network rm svg-net2
+ 1388  docker network create --subnet 192.188.1.0/24 svg-net3
+ 1389  docker run --name=mysql23 --restart on-failure --network=svg-net3  -d container-registry.oracle.com/mysql/community-server:8.0
+ 1390  docker stop mysql23
+ 1391  docker rm mysql23
+ 1392  docker run --name=mysql23 --restart on-failure --network=svg-net3  -d container-registry.oracle.com/mysql/community-server:8.0
+ 1393  docker inspect mysql23
+ 1394  docker exec -it mysql23 /bin/bash
+ 1395  docker logs mysql23 
+ 1396  docker exec -it mysql23 /bin/bash
+ 1397  docker stop mysql23
+ 1398  docker rm mysql23
+ 1399  docker run --name=mysql23 --restart on-failure --network=svg-net3 --ip=192.188.1.2 -p 4406 -d container-registry.oracle.com/mysql/community-server:8.0
+ 1400  docker exec -it mysql23 /bin/bash
+ 1401  docker logs mysql23
+ 1402  exit
+ 1403  mysql -u root
+ 1404  exit
+ 1405  docker -version
+ 1406  docker --version
+ 1407  docker images
+ 1408  docker pull container-registry.oracle.com/mysql/community-server:8.0
+ 1409  docker images
+ 1410  which netstat
+ 1411  netstat -aNp
+ 1412  netstat -anP
+ 1413  netstat -aNp
+ 1414  netstat -aNp | grep LIST
+ 1415  cd ~/Documents/projects/svg-web-frontend/
+ 1416  mvn spring-boot:run
+ 1417  git status
+ 1418  git add src/
+ 1419  git status
+ 1420  git commit -m 'EC-001: Adding form validation to limit max length and special chars'
+ 1421  ssh-add ~/.ssh/id_ed25519
+ 1422  git status
+ 1423  git push origin master
+ 1424  mvn spring-boot:run
+ 1425  git status
+ 1426  git add src/app/
+ 1427  git status
+ 1428  git commit -m 'EC-001: removing debug output'
+ 1429  git push origin master
+ 1430  mvn spring-boot:run
+ 1431  la
+ 1432  vi Dockerfile 
+ 1433  mvn clean package
+ 1434  docker build -t com.ec/svg-web-front .
+ 1435  docker run -itd --name=svg-web --network=svg-net3 --ip=192.188.1.4 -p 8898:8898 com.ec/svg-web-front
+ 1436  docker logs svg-web --tail -f
+ 1437  docker ps
+ 1438  docker stop svg-web 
+ 1439  docker rm svg-web 
+ 1440  docker images
+ 1441  docker image rm 5f7207f80289
+ 1442  cd ~/Documents/projects/svg-web-frontend/
+ 1443  ./ng build --watch
+ 1444  ssh-add ~/.ssh/id_cyberman_rsa.pub 
+ 1445  ssh-add ~/.ssh/id_cyberman_rsa
+ 1446  ssh cyberman@170.64.196.34 -P 2865
+ 1447  ssh cyberman@170.64.196.34 -p 2865
+ 1448  cat ~/.ssh/id_cyberman_rsa.pub 
+ 1449  ssh cyberman@170.64.196.34 -p 2865
+ 1450  history | grep mysql23
+ 1451  docker run --name=mysql23 --restart on-failure --network=svg-net3 --ip=192.188.1.2 -p 4406 -d container-registry.oracle.com/mysql/community-server:8.0
+ 1452  cd ~/Documents/projects/transcription_analyser/in/pl/
+ 1453  docker logs mysql23 
+ 1454  docker exec -it mysql23 /bin/bash
+ 1455  docker rm -f mysql23
+ 1456  docker run --name=mysql23 --restart on-failure --network=svg-net3 --ip=192.188.1.2 -p 4406:3306 -d container-registry.oracle.com/mysql/community-server:8.0
+ 1457  docker logs mysql23 
+ 1458  docker exec -it mysql23 /bin/bash
+ 1459  la /etc/apache2/sites-available/
+ 1460  la /etc/apache2/sites-enabled/
+ 1461  sudo ufw status
+ 1462  cat /etc/apache2/sites-enabled/researchpress.conf 
+ 1463  sudo cp /etc/apache2/sites-available/researchpress.conf /etc/apache2/sites-available/svg_web.conf
+ 1464  sudo vi /etc/apache2/sites-available/svg_web.conf 
+ 1465  sudo a2ensite svg_web.conf 
+ 1466  sudo service apache2 restart
+ 1467  sudo vi /etc/apache2/sites-available/svg_web.conf 
+ 1468  cat /etc/apache2/sites-enabled/svg_web.conf 
+ 1469  cat /etc/apache2/sites-enabled/000-default.conf 
+ 1470  sudo vi /etc/apache2/sites-available/svg_web.conf 
+ 1471  sudo service apache2 restart
+ 1472  sudo ufw status
+ 1473  sudo vi /etc/apache2/sites-available/svg_web.conf 
+ 1474  cat /etc/apache2/sites-available/svg_web.conf 
+ 1475  cat /etc/apache2/sites-available/000-default.conf 
+ 1476  cat /etc/apache2/sites-available/svg_web.conf  | grep -v "#"
+ 1477  cat /etc/apache2/sites-available/000-default.conf  | grep -v "#"
+ 1478  cat /etc/apache2/sites-available/cyberpress.conf  | grep -v "#"
+ 1479  la /etc/apache2/sites-enabled/
+ 1480  cat /etc/apache2/sites-available/researchpress.conf  | grep -v "#"
+ 1481  less /var/log/apache2/error.log
+ 1482  less /var/log/apache2/access.log
+ 1483  tail -200f /var/log/apache2/access.log
+ 1484  la /var/log/apache2/
+ 1485  cat /etc/apache2/sites-available/researchpress.conf  | grep -v "#"
+ 1486  cat /etc/apache2/sites-available/000-default.conf  | grep -v "#"
+ 1487  cat /etc/apache2/sites-available/svg_web.conf  | grep -v "#"
+ 1488  sudo a2dissite svg_web.conf 
+ 1489  sudo service apache2 reload
+ 1490  sudo service apache2 restart
+ 1491  sudo mv /etc/apache2/sites-available/svg_web.conf /etc/apache2/sites-available/svgweb.conf 
+ 1492  sudo vi /etc/apache2/sites-available/svgweb.conf 
+ 1493  sudo a2ensite svgweb.conf 
+ 1494  sudo service apache2 reload
+ 1495  sudo service apache2 restart
+ 1496  cat /etc/apache2/sites-available/svg_web.conf  | grep -v "#"
+ 1497  cat /etc/apache2/sites-available/svgweb.conf  | grep -v "#"
+ 1498  cat /etc/apache2/sites-available/000-default.conf  | grep -v "#"
+ 1499  la /etc/apache2/sites-enabled/
+ 1500  la /etc/apache2/sites-available/
+ 1501  cat /etc/apache2/sites-available/localbrowser.conf  | grep -v "#"
+ 1502  cat /etc/apache2/sites-available/cyberpress.conf  | grep -v "#"
+ 1503  cat /etc/apache2/sites-available/000-default.conf | grep -v "#"
+ 1504  cat /etc/apache2/sites-available/svgweb.conf | grep -v "#"
+ 1505  vi /etc/apache2/sites-available/svgweb.conf 
+ 1506  sudo vi /etc/apache2/sites-available/svgweb.conf 
+ 1507  cat /etc/apache2/sites-available/svgweb.conf | grep -v "#"
+ 1508  sudo vi /etc/apache2/sites-available/svgweb.conf 
+ 1509  sudo service apache2 reload
+ 1510  cat /etc/apache2/sites-available/000-default.conf | grep -v "#"
+ 1511  sudo vi /etc/apache2/sites-available/svgweb.conf 
+ 1512  sudo service apache2 reload
+ 1513  sudo vi /etc/apache2/sites-available/svgweb.conf 
+ 1514  sudo service apache2 reload
+ 1515  sudo vi /etc/apache2/sites-available/svgweb.conf 
+ 1516  sudo service apache2 reload
+ 1517  sudo vi /etc/apache2/sites-available/svgweb.conf 
+ 1518  sudo vi /etc/apache2/apache2.conf 
+ 1519  la /etc/apache2/
+ 1520  la /etc/apache2/mods-enabled/
+ 1521  sudo a2enmod proxy
+ 1522  sudo a2enmod proxy_http
+ 1523  sudo vi /etc/apache2/sites-available/svgweb.conf 
+ 1524  sudo service apache2 reload
+ 1525  sudo service apache2 restart
+ 1526  sudo vi /etc/apache2/sites-available/svgweb.conf 
+ 1527  sudo service apache2 restart
+ 1528  sudo vi /etc/apache2/sites-available/svgweb.conf 
+ 1529  sudo service apache2 restart
+ 1530  sudo vi /etc/apache2/sites-available/svgweb.conf 
+ 1531  la /etc/apache2/mods-enabled/
+ 1532  sudo vi /etc/apache2/sites-available/svgweb.conf 
+ 1533  sudo service apache2 restart
+ 1534  sudo vi /etc/apache2/sites-available/svgweb.conf 
+ 1535  sudo service apache2 restart
+ 1536  sudo vi /etc/apache2/sites-available/svgweb.conf 
+ 1537  sudo service apache2 restart
+ 1538  docker ps
+ 1539  sudo vi /etc/apache2/sites-available/svgweb.conf 
+ 1540  sudo service apache2 restart
+ 1541  sudo vi /etc/apache2/sites-available/svgweb.conf 
+ 1542  sudo service apache2 restart
+ 1543  sudo vi /etc/apache2/sites-available/svgweb.conf 
+ 1544  sudo service apache2 restart
+ 1545  sudo service apache2 reload
+ 1546  sudo vi /etc/apache2/sites-available/svgweb.conf 
+ 1547  sudo service apache2 reload
+ 1548  sudo ufw status
+ 1549  sudo vi /etc/apache2/sites-available/svgweb.conf 
+ 1550  perl dbadmin_setup.pl
+ 1551  docker network ls
+ 1552  docker network inspect svg-net3
+ 1553  perl dbadmin_setup.pl
+ 1554  docker ps
+ 1555  perl dbadmin_setup.pl
+ 1556  docker network inspect svg-net3
+ 1557  docker inspect svg-gen-svc 
+ 1558  cd /var/www/
+ 1559  la
+ 1560  sudo mkdir svg-web
+ 1561  la
+ 1562  sudo chown www-data svg-web/
+ 1563  sudo chgrp admin svg-web/
+ 1564  la
+ 1565  sudo chmod g+w svg-web/
+ 1566  la
+ 1567  cd svg-web/
+ 1568  vi index.html
+ 1569  la
+ 1570  la ../html/
+ 1571  la
+ 1572  sudo chown root index.html 
+ 1573  la
+ 1574  cd ../
+ 1575  la
+ 1576  sudo mv svg-web/ svgweb
+ 1577  la
+ 1578  la svgweb/
+ 1579  la html/
+ 1580  cd svgweb/
+ 1581  la
+ 1582  sudo chown www-data index.html 
+ 1583  sudo chgrp admin index.html 
+ 1584  la
+ 1585  sudo ufw status
+ 1586  la ../localbrowser/
+ 1587  la ../localbrowser/html/
+ 1588  sudo mkdir html
+ 1589  mv index.html html/
+ 1590  sudo mv index.html html/
+ 1591  tree .
+ 1592  la ../localbrowser/
+ 1593  la ../localbrowser/html/
+ 1594  sudo mv html/index.html .
+ 1595  sudo rm -rf html/
+ 1596  docker network inspect svg-net3
+ 1597  cd ~/Documents/projects/svg-generator/
+ 1598  history | grep docker
+ 1599  docker run -itd --name=svg-gen-svc --network=svg-net3 --ip=192.188.1.3 -e MYSQL_HOST=192.188.1.2 -e MYSQL_PORT=3306 -p 8900:8900 com.ec/svg-generator
+ 1600  docker logs svg-gen-svc --tail -f
+ 1601  docker logs svg-gen-svc --tail 200 -f
+ 1602  docker ps
+ 1603  docker rm -f svg-gen-svc
+ 1604  docker run -itd --name=svg-gen-svc --network=svg-net3 --ip=192.188.1.3 -e MYSQL_HOST=192.188.1.2 -e MYSQL_PORT=3306 -p 8900:8900 com.ec/svg-generator
+ 1605  docker logs svg-gen-svc --tail 200 -f
+ 1606  docker ps
+ 1607  docker rm -f svg-gen-svc 
+ 1608  docker images
+ 1609  cat Dockerfile 
+ 1610  mvn clean package
+ 1611  docker images
+ 1612  docker image rm eba6006a987d
+ 1613  docker build -t com.ec/svg-generator .
+ 1614  docker images
+ 1615  docker run -itd --name=svg-gen-svc --network=svg-net3 --ip=192.188.1.3 -e MYSQL_HOST=192.188.1.2 -e MYSQL_PORT=3306 -p 8900:8900 com.ec/svg-generator
+ 1616  docker logs svg-gen-svc --tail 200 -f
+ 1617  docker inspect mysql23 
+ 1618  docker ps
+ 1619  java -jar -DMYSQL_HOST=localhost -DMYSQL_PORT=4406 target/svg-generator-0.0.1-SNAPSHOT.jar 
+ 1620  docker rm -f svg-gen-svc 
+ 1621  java -jar -DMYSQL_HOST=localhost -DMYSQL_PORT=4406 target/svg-generator-0.0.1-SNAPSHOT.jar 
+ 1622  docker ps
+ 1623  docker ps -a
+ 1624  java -jar -DMYSQL_HOST=localhost -DMYSQL_PORT=4406 target/svg-generator-0.0.1-SNAPSHOT.jar 
+ 1625  java -jar -DMYSQL_HOST=192.188.1.2 -DMYSQL_PORT=4406 target/svg-generator-0.0.1-SNAPSHOT.jar 
+ 1626  docker ps
+ 1627  docker run -itd --name=svg-gen-svc --network=svg-net3 --ip=192.188.1.3 -e MYSQL_HOST=192.188.1.2 -e MYSQL_PORT=3306 -p 8900:8900 com.ec/svg-generator
+ 1628  docker ps
+ 1629  docker logs svg-gen-svc --tail 200 -f
+ 1630  git status
+ 1631  git diff
+ 1632  history | grep DB_HOST
+ 1633  docker ps
+ 1634  docker rm -f svg-gen-svc 
+ 1635  docker run -itd --name=svg-gen-svc --network=svg-net3 --ip=192.188.1.3 -e DB_HOST=192.188.1.2 -e DB_PORT=3306 -p 8900:8900 com.ec/svg-generator
+ 1636  docker logs svg-gen-svc --tail 200 -f
+ 1637  docker logs svg-gen-svc --tail 2000 -f
+ 1638  docker rm -f svg-gen-svc 
+ 1639  docker run -itd --name=svg-gen-svc --network=svg-net3 --ip=192.188.1.3 -e DB_HOST=192.188.1.2 -e DB_PORT=4406 -p 8900:8900 com.ec/svg-generator
+ 1640  docker logs svg-gen-svc --tail 2000 -f
+ 1641  docker rm -f svg-gen-svc 
+ 1642  java -jar -DDB_HOST=192.188.1.2 -DDB_PORT=ss06 target/svg-generator-0.0.1-SNAPSHOT.jar 
+ 1643  java -jar -DDB_HOST=192.188.1.2 -DDB_PORT=3306 target/svg-generator-0.0.1-SNAPSHOT.jar 
+ 1644  docker rm -f svg-gen-svc 
+ 1645  docker run -itd --name=svg-gen-svc --network=svg-net3 --ip=192.188.1.3 -e DB_HOST=192.188.1.2 -e DB_PORT=3306 -p 8900:8900 com.ec/svg-generator
+ 1646  docker logs svg-gen-svc --tail 2000 -f
+ 1647  cat Dockerfile 
+ 1648  vi Dockerfile 
+ 1649  docker rm -f svg-gen-svc 
+ 1650  mvn clean package
+ 1651  docker run -itd --name=svg-gen-svc --network=svg-net3 --ip=192.188.1.3 -e MYSQL_HOST=192.188.1.2 -e MYSQL_PORT=3306 -p 8900:8900 com.ec/svg-generator
+ 1652  docker logs svg-gen-svc --tail 2000 -f
+ 1653  docker images
+ 1654  docker image rm 4229c8540369
+ 1655  docker rm -f svg-gen-svc 
+ 1656  docker image rm 4229c8540369
+ 1657  docker build -t com.ec/svg-generator .
+ 1658  docker run -itd --name=svg-gen-svc --network=svg-net3 --ip=192.188.1.3 -e MYSQL_HOST=192.188.1.2 -e MYSQL_PORT=3306 -p 8900:8900 com.ec/svg-generator
+ 1659  docker logs svg-gen-svc --tail 2000 -f
+ 1660  docker rm -f svg-gen-svc 
+ 1661  docker run -itd --name=svg-gen-svc --network=svg-net3 --ip=192.188.1.3 -e MYSQL_HOST=192.188.1.2 -e MYSQL_PORT=4406 -p 8900:8900 com.ec/svg-generator
+ 1662  docker logs svg-gen-svc --tail 2000 -f
+ 1663  docker rm -f svg-gen-svc 
+ 1664  docker run -itd --name=svg-gen-svc --network=svg-net3 --ip=192.188.1.3 -e MYSQL_HOST=192.188.1.2 -e MYSQL_PORT=3306 -p 8900:8900 com.ec/svg-generator
+ 1665  docker logs svg-gen-svc --tail 2000 -f
+ 1666  la
+ 1667  tree target/
+ 1668  less src/main/resources/svg/all_paths.xml 
+ 1669  mvn spring-boot:run
+ 1670  docker rm -f svg-gen-svc 
+ 1671  mvn spring-boot:run
+ 1672  la target/classes/
+ 1673  la target/classes/svg/
+ 1674  mvn spring-boot:run
+ 1675  mvn clean package
+ 1676  docker images
+ 1677  docker image rm 7d5a4ba57ad7
+ 1678  cat Dockerfile 
+ 1679  docker build -t com.ec/svg-generator .
+ 1680  docker run -itd --name=svg-gen-svc --network=svg-net3 --ip=192.188.1.3 -e MYSQL_HOST=192.188.1.2 -e MYSQL_PORT=3306 -p 8900:8900 com.ec/svg-generator
+ 1681  docker logs svg-gen-svc --tail 200 -f
+ 1682  docker rm -f svg-gen-svc 
+ 1683  java -jar -DDB_HOST=192.188.1.2 -DDB_PORT=3306 target/svg-generator-0.0.1-SNAPSHOT.jar 
+ 1684  mvn clean package
+ 1685  java -jar -DDB_HOST=192.188.1.2 -DDB_PORT=3306 target/svg-generator-0.0.1-SNAPSHOT.jar 
+ 1686  mvn clean package
+ 1687  java -jar -DDB_HOST=192.188.1.2 -DDB_PORT=3306 target/svg-generator-0.0.1-SNAPSHOT.jar 
+ 1688  mvn clean package
+ 1689  java -jar -DDB_HOST=192.188.1.2 -DDB_PORT=3306 target/svg-generator-0.0.1-SNAPSHOT.jar 
+ 1690  docker images
+ 1691  docker image rm c2cbc32de232
+ 1692  docker build -t com.ec/svg-generator .
+ 1693  docker run -itd --name=svg-gen-svc --network=svg-net3 --ip=192.188.1.3 -e MYSQL_HOST=192.188.1.2 -e MYSQL_PORT=3306 -p 8900:8900 com.ec/svg-generator
+ 1694  docker logs svg-gen-svc --tail 200 -f
+ 1695  docker images
+ 1696  vi Dockerfile 
+ 1697  docker build -t com.ec/svg-generator .
+ 1698  docker images
+ 1699  docker run -itd --name=svg-gen-svc --network=svg-net3 --ip=192.188.1.3 -e MYSQL_HOST=192.188.1.2 -e MYSQL_PORT=3306 -p 8900:8900 com.ec/svg-generator
+ 1700  docker logs svg-gen-svc --tail 200 -f
+ 1701  mvn spring-boot:run
+ 1702  docker run -itd --name=svg-gen-svc --network=svg-net3 --ip=192.188.1.3 -e MYSQL_HOST=192.188.1.2 -e MYSQL_PORT=3306 -p 8900:8900 com.ec/svg-generator
+ 1703  docker ps
+ 1704  docker logs svg-gen-svc --tail 200 -f
+ 1705  mvn spring-boot:run
+ 1706  docker run -itd --name=svg-gen-svc --network=svg-net3 --ip=192.188.1.3 -e MYSQL_HOST=192.188.1.2 -e MYSQL_PORT=3306 -p 8900:8900 com.ec/svg-generator
+ 1707  docker logs svg-gen-svc --tail 200 -f
+ 1708  docker rm -f svg-gen-svc 
+ 1709  docker ps
+ 1710  mvn clean package
+ 1711  mvn spring-boot:run
+ 1712  docker images 
+ 1713  docker ps
+ 1714  docker images rm 905721986927
+ 1715  docker image rm 905721986927
+ 1716  docker image rm 7bf9a1441e66
+ 1717  mvn clean package
+ 1718  docker build -t com.ec/svg-generator .
+ 1719  docker run -itd --name=svg-gen-svc --network=svg-net3 --ip=192.188.1.3 -e MYSQL_HOST=192.188.1.2 -e MYSQL_PORT=3306 -p 8900:8900 com.ec/svg-generator
+ 1720  docker logs svg-gen-svc --tail 200 -f
+ 1721  cd ../svg-web-frontend/
+ 1722  mvn clean package
+ 1723  mvn spring-boot:run -Dspring-boot-run.arguments=--svg.gen.svc.host=192.188.1.3
+ 1724  mvn spring-boot:run -Dspring-boot.run.arguments=--svg.gen.svc.host=192.188.1.3
+ 1725  mvn spring-boot:run -DSVG_GEN_SVC_HOST=192.188.1.3
+ 1726  mvn clean package
+ 1727  java -jar -DSVG_GEN_SVC_HOST=192.188.1.3 -DSVG_GEN_SVC_PORT=8900 target/svg-web-frontend-0.0.1-SNAPSHOT.jar 
+ 1728  java -jar -DSVG_GEN_SVC_HOST=192.188.1.2 -DSVG_GEN_SVC_PORT=8900 target/svg-web-frontend-0.0.1-SNAPSHOT.jar 
+ 1729  java -jar -DSVG_GEN_SVC_HOST=192.188.1.3 -DSVG_GEN_SVC_PORT=8900 target/svg-web-frontend-0.0.1-SNAPSHOT.jar 
+ 1730  java -jar -DSVG_GEN_SVC_HOST=localhost -DSVG_GEN_SVC_PORT=8900 target/svg-web-frontend-0.0.1-SNAPSHOT.jar 
+ 1731  docker ps
+ 1732  vi Dockerfile 
+ 1733  docker images
+ 1734  docker build -t com.ec/svg-web .
+ 1735  docker run -itd --name=svg-web --network=svg-net3 --ip=192.188.1.4 -e SVG_SVC_HOST=192.188.1.3 -e SVG_SVC_PORT=8900 -p 8898:8898 com.ec/svg-web-front
+ 1736  docker run -itd --name=svg-web --network=svg-net3 --ip=192.188.1.4 -e SVG_SVC_HOST=192.188.1.3 -e SVG_SVC_PORT=8900 -p 8898:8898 com.ec/svg-web
+ 1737  docker inspect svg-web 
+ 1738  docker ps
+ 1739  docker images
+ 1740  docker rm -f svg-web
+ 1741  docker rm -f svg-gen-svc 
+ 1742  vi Dockerfile 
+ 1743  docker images
+ 1744  docker image rm 9f0d4966d2b6
+ 1745  docker image rm 8528fb515fb0
+ 1746  docker build -t com.ec/svg-web-front .
+ 1747  docker images
+ 1748  docker run -itd --name=svg-web --network=svg-net3 --ip=192.188.1.4 -e SVG_SVC_HOST=192.188.1.3 -e SVG_SVC_PORT=8900 -p 8898:8898 com.ec/svg-web-front
+ 1749  docker logs --tail 200 -f svg-web 
+ 1750  docker ps
+ 1751  docker images
+ 1752  docker rm -rf svg-web
+ 1753  docker rm -f svg-web
+ 1754  docker rm -f svg-gen-svc 
+ 1755  mvn spring-boot:run
+ 1756  docker images
+ 1757  docker image rm 6273150b8e04
+ 1758  mvn clean package
+ 1759  docker build -t com.ec/svg-web-front .
+ 1760  docker run -itd --name=svg-web --network=svg-net3 --ip=192.188.1.4 -e SVG_SVC_HOST=192.188.1.3 -e SVG_SVC_PORT=8900 -p 8898:8898 com.ec/svg-web-front
+ 1761  docker logs svg-web --tail 200 -f
+ 1762  git status
+ 1763  git diff
+ 1764  docker rm -f svg-web 
+ 1765  docker rm -f svg-gen-svc 
+ 1766  mvn spring-boot:run
+ 1767  git status
+ 1768  git diff
+ 1769  docker ps
+ 1770  mvn clean package
+ 1771  docker images
+ 1772  docker image rm e853f3436cf6
+ 1773  docker build -t com.ec/svg-web-front
+ 1774  docker build -t com.ec/svg-web-front .
+ 1775  docker images
+ 1776  docker run -itd --name=svg-web --network=svg-net3 --ip=192.188.1.4 -e SVG_SVC_HOST=192.188.1.3 -e SVG_SVC_PORT=8900 -p 8898:8898 com.ec/svg-web-front
+ 1777  docker ps
+ 1778  docker rm -f svg-web 
+ 1779  docker images
+ 1780  docker image rm 07618d8bef10
+ 1781  docker images
+ 1782  mvn clean package
+ 1783  mvn spring-boot:run
+ 1784  git status
+ 1785  git diff
+ 1786  docker images
+ 1787  docker build -t com.ec/svg-web-front .
+ 1788  docker run -itd --name=svg-web --network=svg-net3 --ip=192.188.1.4 -e SVG_SVC_HOST=192.188.1.3 -e SVG_SVC_PORT=8900 -p 8898:8898 com.ec/svg-web-front
+ 1789  docker logs svg-web --tail 200 -f
+ 1790  docker images
+ 1791  docker image rm b39afb2e4243
+ 1792  docker rm -f svg-web 
+ 1793  docker image rm b39afb2e4243
+ 1794  mvn clean package
+ 1795  docker build -t com.ec/svg-web-front .
+ 1796  docker run -itd --name=svg-web --network=svg-net3 --ip=192.188.1.4 -e SVG_SVC_HOST=192.188.1.3 -e SVG_SVC_PORT=8900 -p 8898:8898 com.ec/svg-web-front
+ 1797  docker logs svg-web --tail 200 -f
+ 1798  docker ps
+ 1799  docker rm -f svg-web 
+ 1800  mvn clean package
+ 1801  mvn spring-boot:run
+ 1802  mvn clean package
+ 1803  mvn spring-boot:run
+ 1804  mvn clean package
+ 1805  docker build -t com.ec/svg-web-front .
+ 1806  docker run -itd --name=svg-web --network=svg-net3 --ip=192.188.1.4 -e SVG_SVC_HOST=192.188.1.3 -e SVG_SVC_PORT=8900 -p 8898:8898 com.ec/svg-web-front
+ 1807  docker logs svg-web --tail 200 -f
+ 1808  mvn clean package
+ 1809  mvn spring-boot:run
+ 1810  docker rm -f svg-web 
+ 1811  mvn spring-boot:run
+ 1812  mvn clean package
+ 1813  mvn spring-boot:run
+ 1814  git status
+ 1815  git diff
+ 1816  git status
+ 1817  git diff
+ 1818  git add src/app/components/svg-render/svg-render.component.html 
+ 1819  git commit -m 'EC-001: Bug fixing double submit event on render form'
+ 1820  git status
+ 1821  git diff src/main/java/
+ 1822  git add src/main/resources/
+ 1823  git add src/main/java/
+ 1824  git status
+ 1825  git add Dockerfile 
+ 1826  git commit -m 'EC-001: Introducing Dockerfile for container deployment. Making remote svg-gen service details configurable via docker run cmd.'
+ 1827  git status
+ 1828  ssh-add ~/.ssh/id_ed25519
+ 1829  git status
+ 1830  git add src/app/
+ 1831  git diff init/
+ 1832  git diff src/index.html
+ 1833  git add src/index.html 
+ 1834  git status
+ 1835  git commit -m 'EC-001: Setting context path as svgweb for ng app. Adding url encoding to fetch service to enable ? char.'
+ 1836  git status
+ 1837  git push origin master
+ 1838  cd ../svg-generator/
+ 1839  git status
+ 1840  git add src/main/java/
+ 1841  git status
+ 1842  git add src/main/resources/application.properties 
+ 1843  git add src/main/resources/resource-properties.yml 
+ 1844  git status
+ 1845  git add Dockerfile 
+ 1846  git status
+ 1847  git log
+ 1848  git commit -m 'EC-003: Introducing Dockerfile. Refactoring property references to use classpath loading.'
+ 1849  git push origin master
+ 1850  cd ../svg-web-frontend/
+ 1851  git status
+ 1852  ./ng generate environments
+ 1853  git status
+ 1854  git diff angular.json
+ 1855  docker ps
+ 1856  ./ng build --watch
+ 1857  man scp
+ 1858  ssh-add ~/.ssh/id_cyberman_rsa
+ 1859  ssh cyberman@170.64.196.34 -p 2865
+ 1860  ssh-add ~/.ssh/id_cyberman_rsa
+ 1861  ssh cyberman@170.64.196.34 -p 2865
+ 1862  cat /etc/apache2/sites-enabled/svgweb.conf 
+ 1863  sudo cp /etc/apache2/sites-available/000-default.conf /etc/apache2/sites-available/000-default_bak.txt
+ 1864  sudo vi /etc/apache2/sites-available/000-default
+ 1865  sudo vi /etc/apache2/sites-available/000-default.conf 
+ 1866  sudo cp /etc/apache2/sites-available/000-default.conf /etc/apache2/sites-available/000-default_bak_min.txt
+ 1867  sudo vi /etc/apache2/sites-available/000-default_bak_min.txt 
+ 1868  sudo cp /etc/apache2/sites-available/000-default_bak_min.txt /etc/apache2/sites-available/000-default.conf 
+ 1869  sudo vi /etc/apache2/sites-available/000-default.conf 
+ 1870  sudo service apache2 restart
+ 1871  sudo systemctl restart apache2
+ 1872  sudo a2enmod rewrite
+ 1873  sudo a2enmod proxy
+ 1874  sudo service apache2 reload
+ 1875  sudo service apache2 status
+ 1876  sudo vi /etc/apache2/sites-available/000-default.conf 
+ 1877  sudo service apache2 reload
+ 1878  sudo service apache2 restart
+ 1879  sudo service apache2 status
+ 1880  sudo vi /etc/apache2/sites-available/000-default.conf 
+ 1881  sudo service apache2 reload
+ 1882  sudo service apache2 restart
+ 1883  sudo service apache2 status
+ 1884  sudo vi /etc/apache2/sites-available/000-default.conf 
+ 1885  sudo service apache2 reload
+ 1886  sudo service apache2 status
+ 1887  sudo service apache2 restart
+ 1888  sudo vi /etc/apache2/sites-available/000-default.conf 
+ 1889  sudo service apache2 reload
+ 1890  sudo service apache2 restart
+ 1891  sudo vi /etc/apache2/sites-available/000-default.conf 
+ 1892  sudo service apache2 restart
+ 1893  sudo service apache2 reload
+ 1894  sudo service apache2 restart
+ 1895  sudo vi /etc/apache2/sites-available/000-default.conf 
+ 1896  sudo service apache2 reload
+ 1897  sudo vi /etc/apache2/sites-available/000-default.conf 
+ 1898  sudo service apache2 reload
+ 1899  sudo vi /etc/apache2/sites-available/000-default.conf 
+ 1900  cd ~/Documents/projects/svg-generator/
+ 1901  la
+ 1902  sudo tail -200f /var/log/apache2/error.log
+ 1903  sudo tail -200f /var/log/apache2/access.log
+ 1904  cd ~/Documents/projects/svg-web-frontend/
+ 1905  grep http target/classes/static/
+ 1906  grep http target/classes/static/*
+ 1907  grep svgweb target/classes/static/*
+ 1908  grep -rl svgweb target/classes/static/*
+ 1909  less target/classes/static/main.js
+ 1910  la
+ 1911  git status
+ 1912  git diff
+ 1913  git status
+ 1914  git add src/environments/
+ 1915  git status
+ 1916  git add angular.json src/app/services/svg-fetch.service.ts 
+ 1917  git status
+ 1918  git log
+ 1919  git commit -m 'EC-001: First attempt at introducing parameterized service URLs using ng environment'
+ 1920  mvn clean package
+ 1921  docker build -t com.ec/svg-web-front .
+ 1922  docker images
+ 1923  docker image rm 81ab7273e9b5
+ 1924  docker images
+ 1925  history | grep save
+ 1926  la
+ 1927  docker save com.ec/svg-web-front:latest | gzip > svg-web-front.tar.gz
+ 1928  la
+ 1929  history | grep sftp
+ 1930  sftp -oPort=2865 cyberman@170.64.196.34
+ 1931  rm -rf svg-web-front.tar.gz 
+ 1932  docker images
+ 1933  docker image rm 4a86982f7c67
+ 1934  git status
+ 1935  git diff
+ 1936  mvn clean package
+ 1937  docker build -t com.ec/svg-web-front .
+ 1938  docker save com.ec/svg-web-front:latest | gzip > svg-web-front.tar.gz
+ 1939  sftp -oPort=2865 cyberman@170.64.196.34
+ 1940  cd ~/Documents/projects/svg-web-frontend/
+ 1941  git status
+ 1942  git diff src/app/services/svg-fetch.service.ts
+ 1943  docker pss -a
+ 1944  docker ps -a
+ 1945  docker start mysql23
+ 1946  docker start svg-gen-svc 
+ 1947  mvn clean package
+ 1948  mvn spring-boot:run
+ 1949  cd ~/Documents/projects/svg-web-frontend/
+ 1950  ./ng build --configuration development --watch
+ 1951  cd ~/Documents/projects/
+ 1952  la
+ 1953  rm -rf svg-web-front.tar.gz 
+ 1954  mv svg-gen.tar.gz svg-generator/
+ 1955  history | grep sftp
+ 1956  cd ~/Documents/projects/svg-generator/
+ 1957  cd /var/www/html/
+ 1958  la
+ 1959  sudo vi .htaccess
+ 1960  sudo systemctl reload apache2
+ 1961  sudo systemctl status apache2
+ 1962  sudo vi /etc/apache2/sites-available/000-default.conf 
+ 1963  sudo systemctl reload apache2
+ 1964  sudo systemctl status apache2
+ 1965  sudo vi /etc/apache2/sites-available/000-default.conf 
+ 1966  sudo systemctl reload apache2
+ 1967  sudo systemctl status apache2
+ 1968  sudo vi /etc/apache2/sites-available/000-default.conf 
+ 1969  sudo vi .htaccess 
+ 1970  sudo systemctl reload apache2
+ 1971  sudo vi .htaccess 
+ 1972  sudo systemctl reload apache2
+ 1973  sudo tail -200f /var/log/apache2/error.log
+ 1974  la ~/.ssh/
+ 1975  ssh-add ~/.ssh/id_vp_rsa
+ 1976  ssh edwardca@s07ge.syd5.hostingplatform.net.au -p 2683
+ 1977  cat ~/.ssh/id_cyberman_rsa.pub 
+ 1978  ssh cyberadmin@170.64.168.86 -p 3865
+ 1979  ssh-add ~/.ssh/id_cyberman_rsa
+ 1980  ssh cyberadmin@170.64.168.86 -p 3865
+ 1981  ssh cyberadmin@170.64.168.86 -p 3865 -v
+ 1982  ssh cyberadmin@170.64.168.86 -p 22 -v
+ 1983  ssh cyberadmin@170.64.168.86 -p 22 
+ 1984  ssh cyberadmin@170.64.168.86 -p  2965
+ 1985  ssh cyberadmin@170.64.168.86 -p 22
+ 1986  ssh-add ~/.ssh/id_cyberman_rsa
+ 1987  ssh cyberman@170.64.196.34 -p 2865
+ 1988  ssh cyberman@170.64.196.34 -p 2865 -v
+ 1989  ssh cyberman@170.64.196.34 -p 2865 
+ 1990  ssh-add -l
+ 1991  ssh cyberman@170.64.196.34 -p 2865
+ 1992  ssh cyberadmin@170.64.168.86 -p 2965
+ 1993  ssh cyberadmin@170.64.168.86 -p 22
+ 1994  ssh cyberadmin@170.64.168.86 -p 2965
+ 1995  ssh cyberman@170.64.196.34 -p 2865
+ 1996  ssh-add ~/.ssh/id_cyberman_rsa
+ 1997  ssh cyberadmin@170.64.168.86 -p 2965
+ 1998  ssh cyberadmin@170.64.168.86 -p 22
+ 1999  ssh cyberadmin@170.64.168.86 -p 2965
+ 2000  docker images
+ 2001  docker image rm d0559870da1c
+ 2002  la
+ 2003  rm -rf svg-web-front.tar.gz 
+ 2004  mvn clean package
+ 2005  la
+ 2006  history
+ 2007  git status
+ 2008  git diff
+ 2009  git status
+ 2010  git add src/app/
+ 2011  git add src/main/java/
+ 2012  git src/environments/
+ 2013  git add src/environments/
+ 2014  git status
+ 2015  git add doc
+ 2016  git add docs
+ 2017  git add sh
+ 2018  git status
+ 2019  git log
+ 2020  git commit -m "EC-001: End of milestone 001: Adding support and notes for production URL and https."
+ 2021  git push origin master
+ 2022  ssh-add ~/.ssh/id_ed25519
+ 2023  git push origin master
+ 2024  history
+ 2025  history >> sh/cmd.notes.txt 
