@@ -1,0 +1,105 @@
+    1  exit
+    2  cd
+    3  groups
+    4  sudo apt update
+    5  la
+    6  vi .bashrc
+    7  . .bashrc
+    8  la
+    9  pwd
+   10  mkdir .ssh
+   11  cd .ssh
+   12  vi authorized_keys
+   13  chmod 600 authorized_keys 
+   14  cd ../
+   15  chmod 700 .ssh
+   16  sudo /etc/ssh/sshd_config.d/
+   17  sudo vi /etc/ssh/sshd_config
+   18  sudo systemctl restart ssh
+   19  sudo vi /etc/ssh/sshd_config
+   20  sudo systemctl status ssh
+   21  sudo vi /etc/ssh/sshd_config
+   22  sudo systemctl restart ssh
+   23  sudo systemctl status ssh
+   24  exit
+   25  exit
+   26  sudo vi /etc/nginx/sites-available/bscribbler 
+   27  sudo systemctl restart nginx
+   28  sudo systemctl status nginx
+   29  sudo nginx -t
+   30  sudo vi /etc/nginx/sites-available/bscribbler 
+   31  sudo nginx -t
+   32  sudo vi /etc/nginx/sites-available/bscribbler 
+   33  sudo nginx -t
+   34  sudo systemctl restart nginx
+   35  history
+   36  less /etc/nginx/sites-available/bscribbler 
+   37  la /var/log/
+   38  sudo tail -200f /var/log/nginx/access.log 
+   39  sudo vi /etc/nginx/sites-available/bscribbler 
+   40  sudo systemctl restart nginx
+   41  sudo nginx -t
+   42  watch -n 5 free -m
+   43  exit
+   44  sudo apt remove certbot*
+   45  sudo apt-add-repository --remove ppa:certbot/certbot
+   46  which snap
+   47  sudo snap remove certbot
+   48  sudo -H pip uninstall certbot
+   49  sudo -H pip3 uninstall certbot
+   50  la /usr/bin/
+   51  la /usr/bin/ | grep cert
+   52  la /usr/local/bin/ | grep cert
+   53  la ~/.
+   54  sudo apt update
+   55  sudo apt autoremove
+   56  sudo apt install python3 python3-venv libaugeas0
+   57  sudo python3 -m venv /opt/certbot
+   58  la /opt/certbot/
+   59  sudo /opt/certbot/bin/pip install --upgrade pip
+   60  sudo /opt/certbot/bin/pip install certbot certbot
+   61  sudo ln -s /opt/certbot/bin/certbot /usr/bin/certbot
+   62  certbot --version
+   63  sudo certbot certificates
+   64  la /etc/letsencrypt/
+   65  sudo certbot certonly --dry-run --agree-tos --dns-route53 --cert-name example -d example.net -d *.example.net
+   66  sudo certbot certonly --dry-run --agree-tos --cert-name example -d example.net -d *.example.net
+   67  sudo ufw status
+   68  man ufw
+   69  sudo ufw status verbose
+   70  sudo certbot --dry-run --nginx -d bluescribbler.com -d www.bluescribbler.com
+   71  sudo certbot --nginx -d bluescribbler.com -d www.bluescribbler.com
+   72  sudo /opt/certbot/bin/pip install certbot-nginx
+   73  sudo certbot --nginx -d bluescribbler.com -d www.bluescribbler.com
+   74  vi /etc/nginx/sites-available/bscribbler 
+   75  sudo vi /etc/nginx/sites-available/bscribbler 
+   76  sydo systemctl restart nginx
+   77  sudo systemctl restart nginx
+   78  sudo nginx -t
+   79  sudo vi /etc/nginx/sites-available/bscribbler 
+   80  history | grep watch
+   81  watch -n 5 free -m
+   82  exit
+   83  sudp sudo apt show certbot
+   84  sudo apt show certbot
+   85  cat /etc/os-release 
+   86  sudo systemctl status apache2
+   87  sudo systemctl status nginx
+   88  la /var/www/html/
+   89  cat /var/www/html/index.nginx-debian.html 
+   90  sudo nginx -v
+   91  exit
+   92  history
+   93  exit
+   94  history
+   95  sudo systemctl status snap.certbot.renew.service
+   96  sudo certbot certificates
+   97  sudo certbot renew
+   98  sudo certbot certificates
+   99  exit
+  100  history
+  101  sudo certbot certificates
+  102  sudo certbot renew
+  103  sudo certbot certificates
+  104  exit
+  105  history
